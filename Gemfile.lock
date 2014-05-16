@@ -27,10 +27,6 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     bcrypt (3.1.7)
-<<<<<<< HEAD
-    builder (3.1.4)
-    cancan (1.6.10)
-=======
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -38,8 +34,8 @@ GEM
     bootstrap-sass (3.1.1.1)
       sass (~> 3.2)
     builder (3.1.4)
+    cancan (1.6.10)
     coderay (1.1.0)
->>>>>>> e088c263329c3daccdb6d6276ed6dbec068ebd98
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -47,10 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-<<<<<<< HEAD
-=======
     commonjs (0.2.7)
->>>>>>> e088c263329c3daccdb6d6276ed6dbec068ebd98
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -146,29 +139,21 @@ GEM
       json (>= 1.8.0)
     warden (1.2.3)
       rack (>= 1.0)
-<<<<<<< HEAD
-=======
     will_paginate (3.0.5)
     will_paginate-bootstrap (1.0.0)
       will_paginate (>= 3.0.3)
->>>>>>> e088c263329c3daccdb6d6276ed6dbec068ebd98
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  cancan
-  coffee-rails (~> 4.0.0)
-  devise
-=======
   better_errors
   bootstrap
   bootstrap-sass
+  cancan
   coffee-rails (~> 4.0.0)
   devise
   font-awesome-rails
->>>>>>> e088c263329c3daccdb6d6276ed6dbec068ebd98
   jbuilder (~> 1.2)
   jquery-rails
   less-rails
