@@ -1,0 +1,26 @@
+<div class="page-header">
+	<h2>Mostrar <%= singular_table_name.capitalize %></h2>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><%= singular_table_name.capitalize %></h3>
+			</div>
+			<br>
+			<div class="panel-body">
+				<%- attributes.each do |attribute| -%>
+				<p>
+					<strong><%= attribute.name.capitalize %></strong>
+	    			<%%=@<%= @singular_table_name %>.<%= attribute.name %>%>
+				</p>
+				<%- end -%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%%= link_to 'Editar', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+<%%= link_to 'Voltar', <%= plural_table_name %>_path %>

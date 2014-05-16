@@ -32,6 +32,19 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Gems Externas
+gem 'bootstrap'                
+gem 'simple_form'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'bootstrap-sass'
+gem 'less-rails-bootstrap'
+gem 'font-awesome-rails'
+gem 'devise'
+gem 'better_errors'
+gem 'will_paginate-bootstrap'
+gem 'maskedinput-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
