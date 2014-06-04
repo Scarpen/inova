@@ -16,12 +16,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# Turbolinks makes following link s in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -33,17 +33,20 @@ group :doc do
 end
 
 # Gems Externas
-gem 'bootstrap'                
 gem 'simple_form'
-gem 'therubyracer'
-gem 'less-rails'
 gem 'bootstrap-sass'
-gem 'less-rails-bootstrap'
-gem 'font-awesome-rails'
 gem 'devise'
 gem 'better_errors'
 gem 'will_paginate-bootstrap'
 gem 'maskedinput-rails'
+gem 'cancan'
+gem 'carrierwave'
+gem 'rmagick'
+
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -57,4 +60,4 @@ gem 'maskedinput-rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'cancan'
+

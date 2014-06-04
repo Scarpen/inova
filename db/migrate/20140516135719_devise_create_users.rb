@@ -4,12 +4,11 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
-      
 
       #Autor      
       t.string :full_name, null: false, limit: 80
-      t.string :user_name, null: false
-      t.string :phone_number, null: false
+      t.string :username, null: false
+      t.string :phone, null: false
       t.string :rg, null: false, limit: 20
       t.string :issuing_agency, null: false
       t.date :issuing_date, null: false
@@ -23,11 +22,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :formation, null: false, limit: 20
       t.string :course, null: false, limit: 20
       t.string :institution, null: false, limit: 20
-      t.string :profession, null: false, limit: 20
-
-
-      
-
+      t.string :job, null: false, limit: 20
 
       # ## Recoverable
       # t.string   :reset_password_token

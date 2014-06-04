@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20140516135719) do
     t.string   "email",                          default: "", null: false
     t.string   "encrypted_password",             default: "", null: false
     t.string   "full_name",           limit: 80,              null: false
-    t.string   "user_name",                                   null: false
-    t.string   "phone_number",                                null: false
+    t.string   "username",                                    null: false
+    t.string   "phone",                                       null: false
     t.string   "rg",                  limit: 20,              null: false
     t.string   "issuing_agency",                              null: false
     t.date     "issuing_date",                                null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140516135719) do
     t.string   "formation",           limit: 20,              null: false
     t.string   "course",              limit: 20,              null: false
     t.string   "institution",         limit: 20,              null: false
-    t.string   "profession",          limit: 20,              null: false
+    t.string   "job",                 limit: 20,              null: false
     t.integer  "sign_in_count",                  default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"

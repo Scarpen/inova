@@ -1,64 +1,45 @@
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+  <%= f.input :email, autofocus: true %>
 
-  <div><%= f.label :full_name %><br />
-  <%= f.text_field :full_name, autofocus: false %></div>
+  <%= f.text_field :full_name, autofocus: false %>
 
-  <div><%= f.label :user_name %><br />
-  <%= f.text_field :user_name, autofocus: false %></div>
+  <%= f.text_field :username, autofocus: false %>
 
-  <div><%= f.label :phone_number %><br />
-  <%= f.text_field :phone_number, autofocus: false %></div>
+  <%= f.text_field :phone_number, autofocus: false %>
 
-  <div><%= f.label :rg %><br />
-  <%= f.text_field :rg, autofocus: false %></div>
+  <%= f.text_field :rg, autofocus: false %>
 
-  <div><%= f.label :issuing_agency %><br />
-  <%= f.text_field :issuing_agency, autofocus: false %></div>
+  <%= f.text_field :issuing_agency, autofocus: false %>
 
-  <div><%= f.label :cpf %><br />
-  <%= f.text_field :cpf, autofocus: false %></div>
+  <%= f.text_field :cpf, autofocus: false %>
 
-  <div><%= f.label :birth_date %><br />
-  <%= f.date_field :birth_date, autofocus: false %></div>
+  <%= f.date_field :birth_date, autofocus: false %>
 
-  <div><%= f.label :nationality %><br />
-  <%= f.text_field :nationality, autofocus: false %></div>
+  <%= f.text_field :nationality, autofocus: false %>
 
-  <div><%= f.label :naturality %><br />
-  <%= f.text_field :naturality, autofocus: false %></div>
+  <%= f.text_field :naturality, autofocus: false %>
 
-  <div><%= f.label :residential_address %><br />
-  <%= f.text_field :residential_address, autofocus: false %></div>
+  <%= f.text_field :residential_address, autofocus: false %>
 
-  <div><%= f.label :cep %><br />
-  <%= f.text_field :cep, autofocus: false %></div>
+  <%= f.text_field :cep, autofocus: false %>
 
-  <div><%= f.label :city %><br />
-  <%= f.text_field :city, autofocus: false %></div>
+  <%= f.text_field :city, autofocus: false %>
 
-  <div><%= f.label :formation %><br />
-  <%= f.text_field :formation, autofocus: false %></div>
+  <%= f.text_field :formation, autofocus: false %>
 
-  <div><%= f.label :course %><br />
-  <%= f.text_field :course, autofocus: false %></div>
+  <%= f.text_field :course, autofocus: false %>
 
-  <div><%= f.label :institution %><br />
-  <%= f.text_field :institution, autofocus: false %></div>
+  <%= f.text_field :institution, autofocus: false %>
 
-  <div><%= f.label :profession %><br />
-  <%= f.text_field :profession, autofocus: false %></div>
+  <%= f.text_field :profession, autofocus: false %>
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+  <%= f.password_field :password, autocomplete: "off" %>
 
-  <div><%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
+  <%= f.password_field :password_confirmation, autocomplete: "off" %>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

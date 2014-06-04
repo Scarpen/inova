@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PlataformaInovatech</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%= content_for?(:title) ? yield(:title) : "InovaTech" %></title>
 	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    'application', :media => "all" %>
+
+	<!-- For all other devices -->
+	<!-- Size should be 32 x 32 pixels -->
+	<%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+	<%= javascript_include_tag 'application' %>
 </head>
 <body>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<%= render 'layouts/navbar' %>
+	<%= render 'layouts/messages' %>
+	<div class="container">
+		<div class="row">
+			<%= yield %>
+		</div>
+	</div>
 
-	<%= yield %>
-
+	<div class="container">
+		<div class="row">
+			<hr>
+			<div class="footer">
+				<p>&copy; <%= Time.now.year %> Inova Tech.</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

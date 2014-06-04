@@ -10,12 +10,9 @@
  *
  *= require_tree .
  *= require_self
- *= require twitter/bootstrap
- *= require bootstrap
- *= require font-awesome
  */
 
 
 body {
-	padding-top: 70px;
-}
+ 	padding-top: 60px;
+ }
