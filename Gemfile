@@ -42,6 +42,7 @@ gem 'maskedinput-rails'
 gem 'cancan'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'bootstrap-datepicker-rails'
 
 group :production do
   gem 'pg', '0.15.1'

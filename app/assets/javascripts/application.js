@@ -15,6 +15,7 @@
 //= require_tree .
 //= require bootstrap
 //= require jquery.maskedinput.min.js
+//= require bootstrap-datepicker
 
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
