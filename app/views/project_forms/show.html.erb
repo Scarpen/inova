@@ -1,0 +1,60 @@
+<div class="page-header">
+	<h2>Mostrar Project_form</h2>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Project_form</h3>
+			</div>
+			<br>
+			<div class="panel-body">
+				<p>
+					<strong>Project_title</strong>
+	    			<%=@project_form.project_title%>
+				</p>
+				<p>
+					<strong>Project_concept</strong>
+	    			<%=@project_form.project_concept%>
+				</p>
+				<p>
+					<strong>Current_stage</strong>
+	    			<%=@project_form.current_stage%>
+				</p>
+				<p>
+					<strong>Author</strong>
+	    			<%=@project_form.author%>
+				</p>
+				<p>
+					<strong>Employee</strong>
+	    			<%=@project_form.employee%>
+				</p>
+				<p>
+					<strong>Leader</strong>
+	    			<%=@project_form.leader%>
+				</p>
+				<p>
+					<strong>Event</strong>
+	    			<%=@project_form.event%>
+				</p>
+				<p>
+					<strong>Event_name</strong>
+	    			<%=@project_form.event_name%>
+				</p>
+				<p>
+					<strong>Event_date</strong>
+	    			<%=@project_form.event_date%>
+				</p>
+				<p>
+					<strong>Security_type</strong>
+	    			<%=@project_form.security_type%>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= link_to 'Editar', edit_project_form_path(@project_form) %> |
+<%= link_to 'Voltar', project_forms_path %>
