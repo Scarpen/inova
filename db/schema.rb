@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140605052758) do
+ActiveRecord::Schema.define(version: 20140608212834) do
 
   create_table "project_forms", force: true do |t|
     t.string   "project_title"
@@ -27,6 +27,20 @@ ActiveRecord::Schema.define(version: 20140605052758) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "roles", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "roles_users", id: false, force: true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
+  end
+
+  add_index "roles_users", ["role_id"], name: "index_roles_users_on_role_id", using: :btree
+  add_index "roles_users", ["user_id"], name: "index_roles_users_on_user_id", using: :btree
 
   create_table "securities", force: true do |t|
     t.string   "type"
@@ -49,23 +63,23 @@ ActiveRecord::Schema.define(version: 20140605052758) do
   create_table "users", force: true do |t|
     t.string   "email",                          default: "", null: false
     t.string   "encrypted_password",             default: "", null: false
-    t.string   "full_name",           limit: 80,              null: false
-    t.string   "username",                                    null: false
-    t.string   "phone",                                       null: false
-    t.string   "rg",                  limit: 20,              null: false
-    t.string   "issuing_agency",                              null: false
-    t.date     "issuing_date",                                null: false
-    t.string   "cpf",                 limit: 20,              null: false
-    t.date     "birth_date",                                  null: false
-    t.string   "nationality",         limit: 20,              null: false
-    t.string   "naturality",          limit: 20,              null: false
-    t.string   "residential_address", limit: 50,              null: false
-    t.string   "cep",                 limit: 8,               null: false
-    t.string   "city",                limit: 20,              null: false
-    t.string   "formation",           limit: 20,              null: false
-    t.string   "course",              limit: 20,              null: false
-    t.string   "institution",         limit: 20,              null: false
-    t.string   "job",                 limit: 20,              null: false
+    t.string   "full_name",           limit: 80
+    t.string   "username"
+    t.string   "phone"
+    t.string   "rg",                  limit: 20
+    t.string   "issuing_agency"
+    t.date     "issuing_date"
+    t.string   "cpf",                 limit: 20
+    t.date     "birth_date"
+    t.string   "nationality",         limit: 20
+    t.string   "naturality",          limit: 20
+    t.string   "residential_address", limit: 50
+    t.string   "cep",                 limit: 8
+    t.string   "city",                limit: 20
+    t.string   "formation",           limit: 20
+    t.string   "course",              limit: 20
+    t.string   "institution",         limit: 20
+    t.string   "job",                 limit: 20
     t.integer  "sign_in_count",                  default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
