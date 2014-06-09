@@ -6,23 +6,23 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :encrypted_password, null: false, default: ""
 
       #Autor      
-      t.string :full_name, null: false, limit: 80
-      t.string :username, null: false
-      t.string :phone, null: false
-      t.string :rg, null: false, limit: 20
-      t.string :issuing_agency, null: false
-      t.date :issuing_date, null: false
-      t.string :cpf, null: false, limit: 20
-      t.date :birth_date, null: false
-      t.string :nationality, null: false, limit: 20
-      t.string :naturality, null: false, limit: 20
-      t.string :residential_address, null: false, limit: 50
-      t.string :cep, null: false, limit: 8
-      t.string :city, null: false, limit: 20
-      t.string :formation, null: false, limit: 20
-      t.string :course, null: false, limit: 20
-      t.string :institution, null: false, limit: 20
-      t.string :job, null: false, limit: 20
+      t.string :full_name, limit: 80
+      t.string :username
+      t.string :phone
+      t.string :rg, limit: 20
+      t.string :issuing_agency
+      t.date :issuing_date
+      t.string :cpf, limit: 20
+      t.date :birth_date
+      t.string :nationality, limit: 20
+      t.string :naturality, limit: 20
+      t.string :residential_address, limit: 50
+      t.string :cep, limit: 8
+      t.string :city, limit: 20
+      t.string :formation, limit: 20
+      t.string :course, limit: 20
+      t.string :institution, limit: 20
+      t.string :job, limit: 20
 
       # ## Recoverable
       # t.string   :reset_password_token
