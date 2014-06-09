@@ -11,7 +11,7 @@ class CreateProjectForms < ActiveRecord::Migration
       t.string :event_name
       t.date :event_date
       t.string :security_type
-
+      
       t.timestamps
     end
   end

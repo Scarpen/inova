@@ -1,4 +1,8 @@
 PlataformaInovatech::Application.routes.draw do
+  resources :stages
+
+  resources :securities
+
   resources :project_forms
 
   get "welcome/index"

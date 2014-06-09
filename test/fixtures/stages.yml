@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  current: MyString
-  project_form_id: 
+  current_project_stage: MyString
 
 two:
-  current: MyString
-  project_form_id: 
+  current_project_stage: MyString

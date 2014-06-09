@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140608212834) do
+ActiveRecord::Schema.define(version: 20140609144435) do
 
   create_table "project_forms", force: true do |t|
     t.string   "project_title"
@@ -43,22 +43,16 @@ ActiveRecord::Schema.define(version: 20140608212834) do
   add_index "roles_users", ["user_id"], name: "index_roles_users_on_user_id", using: :btree
 
   create_table "securities", force: true do |t|
-    t.string   "type"
-    t.integer  "project_form_id"
+    t.string   "type_of_security"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "securities", ["project_form_id"], name: "index_securities_on_project_form_id", using: :btree
 
   create_table "stages", force: true do |t|
-    t.string   "current"
-    t.integer  "project_form_id"
+    t.string   "current_project_stage"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "stages", ["project_form_id"], name: "index_stages_on_project_form_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                          default: "", null: false

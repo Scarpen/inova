@@ -69,6 +69,6 @@ class ProjectFormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_form_params
-      params.require(:project_form).permit(:project_title, :project_concept, :current_stage, :author, :employee, :leader, :event, :event_name, :event_date, :security_type)
+      params.require(:project_form).permit(:project_title, :project_concept, :current_stage, :author, :employee, :leader, :event, :event_name, :event_date, :security_type, :security_attributes => [:security_id, :type_of_security])
     end
 end

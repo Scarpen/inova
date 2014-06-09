@@ -24,7 +24,7 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-3">
-            <%= f.input :current_stage %>
+            <%= f.input :current_stage, label_method: :current_project_stage, collection: Stage.all(order: 'id')%>
           </div>
           <div class="col-md-3">
             <%= f.input :author %>
@@ -41,16 +41,18 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-2">
-            <%= f.input :event %>
+            <%= f.input :event, as: :radio_buttons %>
           </div>
+          
           <div class="col-md-2">
             <%= f.input :event_name %>
           </div>
           <div class="col-md-2">
             <%= f.input :event_date, :as => :string, :input_html => { data: {behaviour: "datepicker"}} %>
           </div>
-          <div class="col-md-2">
-            <%= f.input :security_type %>
+
+          <div class="col-md-2">      
+            <%= f.input :security_type, label_method: :type_of_security, collection: Security.all(order: 'id')%>
           </div>
 
   <div class="form-actions">
@@ -58,11 +60,20 @@
   </div>
 <% end %>
 
- <script type="text/javascript">
+ <script>
   $('[data-behaviour~=datepicker]').datepicker({
     "format": "yyyy-mm-dd",
     "weekStart": 1,
     "autoclose": true
   });
+</script>
+
+<script type="text/javascript">
+$(function() {
+  $('a#show_whatever').click(function(event){
+    event.preventDefault();
+    $('div#whatever').toggle();
+  });
+});  
 </script>
 
