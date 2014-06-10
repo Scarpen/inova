@@ -1,4 +1,10 @@
 PlataformaInovatech::Application.routes.draw do
+  resources :stages
+
+  resources :securities
+
+  resources :project_forms
+
   get "welcome/index"
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

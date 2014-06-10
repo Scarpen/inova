@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project_title: MyString
+  project_concept: MyText
+  current_stage: MyString
+  author: MyString
+  employee: MyString
+  leader: MyString
+  event: false
+  event_name: MyString
+  event_date: 2014-06-05
+  security_type: MyString
+
+two:
+  project_title: MyString
+  project_concept: MyText
+  current_stage: MyString
+  author: MyString
+  employee: MyString
+  leader: MyString
+  event: false
+  event_name: MyString
+  event_date: 2014-06-05
+  security_type: MyString
