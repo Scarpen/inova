@@ -43,6 +43,7 @@ gem 'cancan'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'bootstrap-datepicker-rails'
+gem 'font-awesome-sass'
 
 group :production do
   gem 'pg', '0.15.1'
