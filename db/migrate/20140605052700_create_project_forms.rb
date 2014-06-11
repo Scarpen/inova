@@ -3,16 +3,15 @@ class CreateProjectForms < ActiveRecord::Migration
     create_table :project_forms do |t|
       t.string :project_title
       t.text :project_concept
-      t.string :current_stage
+      t.references :stage, index: true  
       t.string :author
       t.string :employee
       t.string :leader
-      t.boolean :event
-      t.string :event_name
-      t.date :event_date
-      t.string :security_type
+      t.references :events, index: true
+      t.references :security, index: true
       
       t.timestamps
     end
+
   end
 end
