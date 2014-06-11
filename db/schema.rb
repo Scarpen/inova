@@ -11,22 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140609144435) do
+ActiveRecord::Schema.define(version: 20140610133730) do
+
+  create_table "events", force: true do |t|
+    t.string   "name"
+    t.date     "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "project_forms", force: true do |t|
     t.string   "project_title"
     t.text     "project_concept"
-    t.string   "current_stage"
+    t.integer  "stage_id"
     t.string   "author"
     t.string   "employee"
     t.string   "leader"
-    t.boolean  "event"
-    t.string   "event_name"
-    t.date     "event_date"
-    t.string   "security_type"
+    t.integer  "events_id"
+    t.integer  "security_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "project_forms", ["events_id"], name: "index_project_forms_on_events_id", using: :btree
+  add_index "project_forms", ["security_id"], name: "index_project_forms_on_security_id", using: :btree
+  add_index "project_forms", ["stage_id"], name: "index_project_forms_on_stage_id", using: :btree
 
   create_table "roles", force: true do |t|
     t.string   "name"

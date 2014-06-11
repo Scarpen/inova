@@ -1,0 +1,7 @@
+<div class="col-md-2">
+            <%= f.input :event_name, disabled: true %>
+          </div>
+          <div class="col-md-2">
+            <%= f.input :event_date, :as => :string, :input_html => { data: {behaviour: "datepicker"}, disabled: true} %>
+          </div>
+:input_html => { onclick: "show_event()"

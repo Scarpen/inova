@@ -1,6 +1,5 @@
 class ProjectForm < ActiveRecord::Base
-  has_many :stages
-  has_many :securities
-  accepts_nested_attributes_for :securities
-  accepts_nested_attributes_for :stages
+	has_one :security
+	has_one :stage
+	has_many :events
 end

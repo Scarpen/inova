@@ -1,4 +1,6 @@
 PlataformaInovatech::Application.routes.draw do
+  resources :events
+
   resources :stages
 
   resources :securities
