@@ -1,143 +1,27 @@
-<%= simple_form_for(@project_form) do |f| %>
-<%= f.error_notification %>
+
 
 <div class="form-inputs" >
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <ul class="nav nav-tabs", id="myTab">
-        <li class="active"><a href="/project_forms/new" data-toggle = "tab">Project Informations</a></li>
-        <li><a href="/events/index" data-toggle = "tab">Events</a></li>
+
+
+      <ul class="nav nav-tabs">
+      <li class="active"> <a href="/project_forms/new" data-target="#project_forms" data-toggle="tab">Project Informations</a>
+
+        </li>
+
+        <li><a href="/events/new" data-target="#events" data-toggle="tab">Events</a>
+
+        </li>
       </ul>
+
+
+
     </div>
     <div class="panel-body">
-      <div class="form-inputs">
-        <div class="form-group">
-          <div class="col-md-12">
-           <div  id="myTabContent" class="tab-content">
-  <div class="tab-pane fade active in" id="home"></div>
-  <div class="tab-pane fade" id="profile">rs</div>
-  
-</div>
-            <div class="col-md-8">
-              <%= f.input :project_title, autofocus: false %>
-            </div>
-            <div class="col-md-5">
-              <%= f.input :project_concept %>
-            </div>
-            <div class="col-md-3">
-              <%= f.input :stage_id, label_method: :current_project_stage, collection: Stage.all(order: 'id')%>
-            </div>
+      <div class="tab-content">
+        <div class="tab-pane active fade in" id="project_forms"><%= render 'project_form' %></div>
+        <div class="tab-pane" id="events"><%= render 'event_form' %></div>
+      </div>
+      
 
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-md-12">
-            <div class="col-md-5">
-              <%= f.input :author %>
-            </div>  
-            <div class="col-md-3">      
-              <%= f.input :security_id,label_method: :type_of_security, collection: Security.all(order: 'id')%>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="col-md-12">
-            <div class="col-md-4">
-              <%= f.input :leader %>
-            </div>
-            <div class="col-md-4">
-             <%= f.input :employee %>
-           </div>
-         </div>
-       </div>
-
-       <div class="form-group">
-         <div class="col-md-12">
-          <div class="col-md-3">
-           <%= link_to :events, "#eventosModal", data: {toggle: "modal"}, class: "btn btn-default"%>
-         </div>
-       </div>
-     </div>
-
-
-     <!-- Events Modal -->
-     <div class="modal fade" id="eventosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-       <div class="modal-dialog">
-         <div class="modal-content">
-           <div class="modal-header">
-             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-             <h4 class="modal-title" id="myModalLabel">Eventos</h4>
-           </div>
-           <div class="modal-body">
-             <div class="form-inputs">
-               <%= f.association :events, as: :check_boxes %>
-             </div>
-           </div>
-           <div class="modal-footer">
-             <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-
-<div class="panel-footer"> 
-  <div class="form-actions">
-    <%= f.button :submit%>
-  </div>
-</div>
-
-
-<% end %>
-
-<script>
-  $('[data-behaviour~=datepicker]').datepicker({
-    "format": "yyyy-mm-dd",
-    "weekStart": 1,
-    "autoclose": true
-  });
-</script>
-
-<script>
-
-
-  function hide_event() {
-
-    document.getElementById("project_form_event_name").disabled = "true";
-    document.getElementById("project_form_event_date").disabled = "true";
-
-    toggle_divs();
-  }
-
-  function show_event() {
-    if(document.getElementById("project_form_event").checked){
-      document.getElementById("project_form_event_name").disabled = false;
-      document.getElementById("project_form_event_date").disabled = false;}
-      else{
-        hide_event();
-      }
-    }
-
-    $('.form-control').popover({
-      trigger : 'focus'
-    });
-
-  })
-</script>
-<script>
-$('#myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-  $(function () {
-    $('#myTab a:last').tab('show')
-  })
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  e.target // activated tab
-  e.relatedTarget // previous tab
-})
-</script>

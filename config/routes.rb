@@ -1,11 +1,10 @@
 PlataformaInovatech::Application.routes.draw do
-  resources :events
-
+resources :events
   resources :stages
 
   resources :securities
 
-  resources :project_forms
+  resources :project_forms 
 
   get "welcome/index"
   devise_for :users
