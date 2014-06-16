@@ -1,24 +1,32 @@
 <%= simple_form_for(@event) do |f| %>
-<%= f.error_notification %>
-	<div class="form-inputs">
-  <div class="form-group">
-    <div class="col-md-12">
-      <div class="col-md-8">
-         <%= f.input :name %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <div class="form-group">
+      <div class="col-md-12">
+        <div class="col-md-6">
+          <%= f.input :name %>
+          <br/>
+        </div>
+        <div class="col-md-6">
+          <%= f.input :date,:as => :string, :input_html => { data: {behaviour: "datepicker"}} %>
+        </div>
       </div>
-      <div class="col-md-5">
-       
-    <%= f.input :date,:as => :string, :input_html => { data: {behaviour: "datepicker"}} %>
-
-      </div>
-
-
-
-<div class="panel-footer"> 
-  <div class="form-actions">
-    <%= f.button :submit%>
+    </div>
   </div>
-</div>
+
+  <div class="panel-footer"> 
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
+  </div>
+<% end %>
 
 
-<%end%>
+<script type="text/javascript">
+  $('[data-behaviour~=datepicker]').datepicker({
+    "format": "yyyy-mm-dd",
+    "weekStart": 1,
+    "autoclose": true
+  });
+</script>
