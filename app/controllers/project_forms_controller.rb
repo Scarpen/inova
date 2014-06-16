@@ -15,6 +15,7 @@ class ProjectFormsController < ApplicationController
   # GET /project_forms/new
   def new
     @project_form = ProjectForm.new
+    @event = Event.new
   end
 
   # GET /project_forms/1/edit
@@ -36,6 +37,8 @@ class ProjectFormsController < ApplicationController
       end
     end
   end
+
+   
 
   # PATCH/PUT /project_forms/1
   # PATCH/PUT /project_forms/1.json
@@ -69,6 +72,6 @@ class ProjectFormsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def project_form_params
-      params.require(:project_form).permit(:project_title, :project_concept, :current_stage, :author, :employee, :leader, :event, :event_name, :event_date, :security_type, :security_attributes => [:security_id, :type_of_security])
+      params.require(:project_form).permit(:project_title, :project_concept, :current_stage, :author, :employee, :leader, :event_attributes => [:event_id, :name, :date] , :security_attributes => [:security_id, :type_of_security])
     end
 end
