@@ -26,7 +26,7 @@ class ProjectFormsController < ApplicationController
   # POST /project_forms.json
   def create
     @project_form = ProjectForm.new(project_form_params)
-
+    @event = Event.new
     respond_to do |format|
       if @project_form.save
         format.html { redirect_to @project_form, notice: 'Project form was successfully created.' }
