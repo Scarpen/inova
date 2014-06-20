@@ -1,7 +1,5 @@
-<!-- Fecha o body para colocar o carrossel tela cheia -->
 </div>
   </div>
-    </body>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -44,58 +42,56 @@
   </a>
 </div>
 
-<!-- Reabre o body para colocar o ŕesto do conteúdo -->
-<body>
-      <div class="container">
-        <div class="row" style="margin-top :-11px">
+<div class="container">
+  <div class="row" style="margin-top :-11px">
 
 <div class="cadiv">
     <ul class="ca-menu">
         <li>
-            <a href="#">
-                <span class="ca-icon">A</span>
-                <div class="ca-content">
-                    <h2 class="ca-main">Cadastre seu projeto</h2>
-                    <h3 class="ca-sub">	</h3>
-                </div>
-            </a>
+            <%= link_to new_project_form_path do%>
+              <span class="ca-icon">A</span>
+              <div class="ca-content">
+                  <h2 class="ca-main">Register projects</h2>
+                  <h3 class="ca-sub"></h3>
+              </div>
+            <%end%>
         </li>
         <li>
-            <a href="#">
+            <%= link_to project_forms_path do%>
                 <span class="ca-icon">L</span>
                 <div class="ca-content">
-                    <h2 class="ca-main">Procure projetos</h2>
+                    <h2 class="ca-main">Search projects</h2>
                     <h3 class="ca-sub"></h3>
                 </div>
-            </a>
+            <%end%>
         </li>
         <li>
-            <a href="#">
+            <%= link_to securities_path do%>
                 <span class="ca-icon">x</span>
                 <div class="ca-content">
-                    <h2 class="ca-main">Segurança e privacidade</h2>
+                    <h2 class="ca-main">Security and Privacy</h2>
                     <h3 class="ca-sub"></h3>
                 </div>
-            </a>
+            <%end%>
         </li>
         
         <li>
-            <a href="#">
+            <%= link_to securities_path do%>
                 <span class="ca-icon">$</span>
                 <div class="ca-content">
-                    <h2 class="ca-main">Investimentos</h2>
+                    <h2 class="ca-main">Investment</h2>
                     <h3 class="ca-sub"></h3>
                 </div>
-            </a>
+            <%end%>
         </li>
         <li>
-            <a href="#">
+            <%= link_to about_about_path do%>
                 <span class="ca-icon">R</span>
                 <div class="ca-content">
-                    <h2 class="ca-main">Sobre</h2>
+                    <h2 class="ca-main">About</h2>
                     <h3 class="ca-sub"></h3>
                 </div>
-            </a>
+            <%end%>
         </li>
     </ul>
   </div>

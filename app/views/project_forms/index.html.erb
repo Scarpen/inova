@@ -1,57 +1,46 @@
 <div class="page-header">
-  <h1>Listar project_forms</h1>
+  <h1>List projects</h1>
 </div>
 
 <div class="panel panel-default">
  <div class="panel-heading">
-    <h3 class="panel-title">project_forms</h3>
+    <h3 class="panel-title">projects</h3>
   </div>
   <div class="panel-body">
     <table class="table table-hover" width="100%">
       <thead>
         <tr>
-                      <th>project_title</th>
-                      <th>project_concept</th>
-                      <th>current_stage</th>
-                      <th>author</th>
-                      <th>employee</th>
-                      <th>leader</th>
-                      <th>event</th>
-                      
-                    <th></th>
-          <th></th>
-          <th></th>
+            <th>project_title</th>
+            <th>project_concept</th>
+            <th>current_stage</th>
+            <th>author</th>
+            <th>employee</th>
+            <th>leader</th>
+            <th>event</th>
+
+            <th>Actions</th>
         </tr>
       </thead>
 
       <tbody>
         <%= content_tag_for(:tr, @project_forms) do |project_form| %>
 
-                      <td><%= project_form.project_title %></td>
-                      <td><%= project_form.project_concept %></td>
-                      
-                      <td><%= project_form.author %></td>
-                      <td><%= project_form.employee %></td>
-                      <td><%= project_form.leader %></td>
-                      <td><%= project_form.events %></td>
-                      
-                      
-                      
-          
-          <td>
-            <%= link_to 'Detalhes', project_form %>
-          </td>
-          <td>
-            <%= link_to 'Editar', edit_project_form_path(project_form) %>
-          </td>
-          <td>
-            <%= link_to 'Deletar', project_form, method: :delete, data: { confirm: 'Tem certeza?'} %>
-          </td>
+          <td><%= project_form.project_title %></td>
+          <td><%= project_form.project_concept %></td>
+          <td></td>
+          <td><%= project_form.author %></td>
+          <td><%= project_form.employee %></td>
+          <td><%= project_form.leader %></td>
+          <td><%= project_form.events.name %></td>
 
-          
-        
+          <td>
+          <div class="btn-group">
+            <%= link_to 'Detalhes', project_form, class: 'btn btn-primary btn-sm' %>
+            <%= link_to 'Editar', edit_project_form_path(project_form), class: 'btn btn-info btn-sm' %>
+            <%= link_to 'Deletar', project_form, method: :delete, data: { confirm: 'Tem certeza?'}, class: 'btn btn-danger btn-sm' %>
+          </div>
+          </td> 
         <% end %>
-        
       </tbody>
     </table>
   </div>

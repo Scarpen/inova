@@ -4,24 +4,24 @@
 <div class="form-inputs">
   <div class="form-group">
     <div class="col-md-12">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <%= f.input :project_title, autofocus: false %>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-8">
         <%= f.input :project_concept %>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <%= f.input :stage_id, label_method: :current_project_stage, collection: Stage.all(order: 'id')%>
       </div>
-
     </div>
   </div>
+
   <div class="form-group">
     <div class="col-md-12">
-      <div class="col-md-5">
+      <div class="col-md-8">
         <%= f.input :author %>
       </div>  
-      <div class="col-md-3">      
+      <div class="col-md-4">      
         <%= f.input :security_id,label_method: :type_of_security, collection: Security.all(order: 'id')%>
       </div>
     </div>
@@ -36,47 +36,53 @@
        <%= f.input :employee %>
        <br/>
      </div>
-   </div>
- </div>
-
- <div class="form-group">
-   <div class="col-md-12">
-    <div class="col-md-3">
-     <%= link_to "events" "#eventosModal", data: {toggle: "modal"}, class: "btn btn-default" do%>
-     <div class = "glyphicon glyphicon-pushpin"> Events</div>
-     <%end%>
-   </div>
- </div>
+     <div class="col-md-4">
+      <br/>
+      <%= link_to "events" "#eventosModal", data: {toggle: "modal"}, class: "btn btn-default" do%>
+      <div class = "glyphicon glyphicon-pushpin"> Events</div>
+      <%end%>
+    </div>
+  </div>
 </div>
-
-
-<!-- Events Modal -->
-<div class="modal fade" id="eventosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
- <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-       <h4 class="modal-title" id="myModalLabel">Eventos</h4>
-     </div>
-     <div class="modal-body">
-       <div class="form-inputs">
-         <%= f.association :events, as: :check_boxes %>
-       </div>
-     </div>
-     <div class="modal-footer">
-       <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
-     </div>
-   </div>
- </div>
-</div>
-</div>
-
-
 
 <div class="panel-footer"> 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 </div>
+
+<!-- Events Modal -->
+<div class="modal fade" id="eventosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Eventos</h4>
+      </div>
+      <div class="modal-body">
+        <table>
+          <thead>
+            <div class="form-inputs">
+              <div class="form-group">
+                <tr>
+                  <th> 
+                   <%= f.input :events_id, as: :check_boxes, collection: Event.all %>                
+                 </th>
+               </tr>
+             </div>
+           </div>
+         </thead>
+       </table>
+     </div>
+     <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
 
 <% end %>

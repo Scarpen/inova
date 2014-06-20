@@ -27,11 +27,11 @@ class EventsController < ApplicationController
   def create
     
     @event = Event.new
-    @project_form = ProjectForm.new
+   
     respond_to do |format|
       if @event.save
         format.html { redirect_to new_project_form_path, notice: 'Event was successfully created.' }
-        format.json { render action: 'new', location: @project_form }
+        format.json { render action: 'new', location: @event }
       else
         format.html { render action: 'new' }
         format.json { render json: @event.errors, status: :unprocessable_entity }
