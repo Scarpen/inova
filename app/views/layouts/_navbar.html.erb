@@ -14,17 +14,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if params[:controller] == 'welcome' %>"><a href="/">Home</a></li>
+        <li class="<%= 'active' if params[:action] == 'index' %>"><a href="/">Home</a></li>
+        <li class="<%= 'active' if params[:action] == 'about' %>"><%= link_to "About", welcome_about_path %></li>
         <li class="<%= 'active' if params[:controller] == 'project_forms' %>"><%= link_to " Projects", project_forms_path%></li>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li class="<%= 'active' if params[:controller] == 'about' %>"><%= link_to "About", about_about_path%></li>
-            <li class="<%= 'active' if params[:controller] == 'securities' %>"><%= link_to "Securities", securities_path%></li>
-          </ul>
-        </li>
-        
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>

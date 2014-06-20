@@ -1,13 +1,13 @@
 PlataformaInovatech::Application.routes.draw do
-resources :events
-  resources :stages
-      
-  resources :securities
+  resources :project_forms do
+    resources :events
+    resources :stages
+    resources :securities
+  end
 
-  resources :project_forms 
-
-  get 'about/about'
   get "welcome/index"
+  get "welcome/about"
+
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.

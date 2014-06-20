@@ -25,9 +25,7 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    
     @event = Event.new
-   
     respond_to do |format|
       if @event.save
         format.html { redirect_to new_project_form_path, notice: 'Event was successfully created.' }
