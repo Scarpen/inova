@@ -132,7 +132,7 @@ pt-BR:
     select:
       prompt: Por favor selecione
     submit:
-      create: Criar %{model}
+      create: Cadastrar %{model}
       submit: Salvar %{model}
       update: Atualizar %{model}
   number:
@@ -261,6 +261,8 @@ pt-BR:
     project: Projetos
     login: Entrar
     register: Registrar-se
+    sign_up: Inscrever-se
+    sign_in: Entrar
   projects:
     new:
       title: Cadastro
@@ -291,5 +293,5 @@ pt-BR:
       protection: "Proteção"
       show: "Exibir"
       date: "Data"
-      
+
 

@@ -29,6 +29,7 @@
   </div>
 </div>
 
+<% if @project.events.count.nonzero? %>
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title"><%= t '.event' %></h3>
@@ -52,6 +53,8 @@
     </table>
   </div>
 </div>
+<% end %>
+
 
 <%= link_to t('links.edit'), edit_project_path(@project), class: "btn btn-primary" %>
 <%= link_to t('links.back'), projects_path, class: "btn btn-default" %>
