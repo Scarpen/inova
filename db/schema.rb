@@ -11,31 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140610133730) do
+ActiveRecord::Schema.define(version: 20140620172918) do
 
   create_table "events", force: true do |t|
-    t.string   "name"
+    t.string   "description"
     t.date     "date"
+    t.integer  "project_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "project_forms", force: true do |t|
-    t.string   "project_title"
-    t.text     "project_concept"
+  add_index "events", ["project_id"], name: "index_events_on_project_id", using: :btree
+
+  create_table "projects", force: true do |t|
+    t.string   "title"
+    t.text     "description"
     t.integer  "stage_id"
-    t.string   "author"
-    t.string   "employee"
-    t.string   "leader"
-    t.integer  "events_id"
-    t.integer  "security_id"
+    t.integer  "protection_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "project_forms", ["events_id"], name: "index_project_forms_on_events_id", using: :btree
-  add_index "project_forms", ["security_id"], name: "index_project_forms_on_security_id", using: :btree
-  add_index "project_forms", ["stage_id"], name: "index_project_forms_on_stage_id", using: :btree
+  add_index "projects", ["protection_id"], name: "index_projects_on_protection_id", using: :btree
+  add_index "projects", ["stage_id"], name: "index_projects_on_stage_id", using: :btree
+
+  create_table "protections", force: true do |t|
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "roles", force: true do |t|
     t.string   "name"
@@ -51,14 +55,8 @@ ActiveRecord::Schema.define(version: 20140610133730) do
   add_index "roles_users", ["role_id"], name: "index_roles_users_on_role_id", using: :btree
   add_index "roles_users", ["user_id"], name: "index_roles_users_on_user_id", using: :btree
 
-  create_table "securities", force: true do |t|
-    t.string   "type_of_security"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "stages", force: true do |t|
-    t.string   "current_project_stage"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

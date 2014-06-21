@@ -1,3 +1,9 @@
 class Event < ActiveRecord::Base
-	belongs_to :project_form
+
+  validates :description, presence: true
+
+  scope :by_date, -> { order(date: :asc) }
+  
+  belongs_to :project
+  
 end

@@ -16,7 +16,7 @@
 //= require bootstrap
 //= require jquery.maskedinput.min.js
 //= require bootstrap-datepicker
-
+//= require cocoon
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style')
@@ -27,4 +27,5 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
 

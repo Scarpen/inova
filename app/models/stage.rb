@@ -1,3 +1,3 @@
 class Stage < ActiveRecord::Base
-	belongs_to :project_form
+  has_many :projects
 end

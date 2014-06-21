@@ -5,13 +5,10 @@ class User < ActiveRecord::Base
 	has_and_belongs_to_many :roles
 
 	# Identificar Role
-	def role? r
+	def role?(r)
 		self.roles.each do |role|
-			if role[:name] == r
-				return true
-			end
+			role[:name] == r
 		end
-		return false
 	end
 
 end

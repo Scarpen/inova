@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1><%= t '.list' %> <%= t '.project' %></h1>
+</div>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= t '.project' %></h3>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover table-condensed table-responsive">
+      <thead>
+        <tr>
+          <th><%= t '.title' %></th>
+          <th><%= t '.description' %></th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @projects.each do |project| %>
+        <tr>
+          <td><%= project.title %></td>
+          <td><%= project.description %></td>
+          <td>
+            <%= link_to project, class: 'btn btn-info btn-xs' do %>
+              <i class="glyphicon glyphicon-info-sign"> <%= t '.show' %></i>
+            <% end %>
+          </td>
+          <td>
+             <%= link_to edit_project_path(project), class: 'btn btn-warning btn-xs' do %>
+              <i class="glyphicon glyphicon-edit"> <%= t '.edit' %></i>
+            <% end %>
+          </td>
+          <td>
+            <%= link_to project, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' do %>
+              <i class="glyphicon glyphicon-remove-circle"> <%= t '.destroy' %></i>
+            <% end %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<center><%= paginate @projects %></center>
+<%= link_to t('links.new'), new_project_path, class: "btn btn-primary" %>

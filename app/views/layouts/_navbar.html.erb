@@ -14,17 +14,17 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="<%= 'active' if params[:action] == 'index' %>"><a href="/">Home</a></li>
-        <li class="<%= 'active' if params[:action] == 'about' %>"><%= link_to "About", welcome_about_path %></li>
-        <li class="<%= 'active' if params[:controller] == 'project_forms' %>"><%= link_to " Projects", project_forms_path%></li>
+        <li class="<%= 'active' if params[:action] == 'home' %>"><a href="/"><%= t('links.home') %></a></li>
+        <li class="<%= 'active' if params[:action] == 'about' %>"><%= link_to t('links.about'), welcome_about_path %></li>
+        <li class="<%= 'active' if params[:controller] == 'projects' %>"><%= link_to t('links.project'), projects_path%></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
           <li><%= link_to current_user.email, edit_user_registration_path(current_user) %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: 'delete' %></li>
           <% else %>
-          <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to " Login", "#myModal", data: {toggle: "modal"} %></li>
-          <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>"><%= link_to "Register", new_user_registration_path %></li>
+          <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to t('links.login'), "#myModal", data: {toggle: "modal"} %></li>
+          <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>"><%= link_to t('links.register'), new_user_registration_path %></li>
           <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
