@@ -21,8 +21,9 @@ body {
 	height:100%;
 }
 body{
-	padding-top: 40px;
+	padding-top: 60px;
 }
+
 #header {
 	padding:10px;
 }
@@ -48,4 +49,8 @@ body{
  	padding-top: 20px;
  	color:#fff;
  	font-size: 14px;
+ }
+
+ .carousel{
+ 	margin-top:-20px; 
  }

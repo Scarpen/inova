@@ -64,17 +64,22 @@
 	 	<div class="page-header">
 	 		<h1><%= t '.event' %></h1>
  		</div>
-	  <div id="events">
-	    <%= f.simple_fields_for :events do |event| %>
-	      <%= render "event_fields", :f => event %>
-	    <% end %>
-	  </div>
-  </div>
+ 		<div class="panel panel-primary">
+			<div class="panel-body">
+				<div id="events">
+				    <%= f.simple_fields_for :events do |event| %>
+				      <%= render "event_fields", :f => event %>
+				    <% end %>
+				    <%= link_to_add_association t('links.add_event'), f, :events, class: "btn btn-info" %>
+	  			</div>
+	  		</div>
+	  	</div>
+    </div>
 
 	  <div class="form-actions">
 	  	<div class="row">
 	  		<div class="col-md-12">
-		  		<br><%= link_to_add_association t('links.add_event'), f, :events, class: "btn btn-info" %>
+		  		<br>
 		    	<%= f.button :submit, class: "btn btn-primary" %>
 		    	<%= link_to t('links.back'), projects_path, class: "btn btn-default" %>
 	    	</div>
