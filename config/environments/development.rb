@@ -27,18 +27,12 @@ PlataformaInovatech::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  # Devise Mailer Config
+  # Devise mailer
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.smtp_settings = {
-    address: "smpt.gmail.com",
-    port: 587,
-    domain: ENV["GMAIL_DOMAIN"],
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
-  }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.default :charset => "utf-8"
 
-  # Locales
+
   config.i18n.available_locales = ['pt-BR', :pt]
 end

@@ -62,34 +62,47 @@ ActiveRecord::Schema.define(version: 20140620172918) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "email",                          default: "", null: false
-    t.string   "encrypted_password",             default: "", null: false
-    t.string   "full_name",           limit: 80
+    t.string   "email",                             default: "", null: false
+    t.string   "encrypted_password",                default: "", null: false
+    t.string   "full_name",              limit: 80
     t.string   "username"
     t.string   "phone"
-    t.string   "rg",                  limit: 20
+    t.string   "rg",                     limit: 20
     t.string   "issuing_agency"
     t.date     "issuing_date"
-    t.string   "cpf",                 limit: 20
+    t.string   "cpf",                    limit: 20
     t.date     "birth_date"
-    t.string   "nationality",         limit: 20
-    t.string   "naturality",          limit: 20
-    t.string   "residential_address", limit: 50
-    t.string   "cep",                 limit: 8
-    t.string   "city",                limit: 20
-    t.string   "formation",           limit: 20
-    t.string   "course",              limit: 20
-    t.string   "institution",         limit: 20
-    t.string   "job",                 limit: 20
-    t.integer  "sign_in_count",                  default: 0,  null: false
+    t.string   "nationality",            limit: 20
+    t.string   "naturality",             limit: 20
+    t.string   "residential_address",    limit: 50
+    t.string   "cep",                    limit: 8
+    t.string   "city",                   limit: 20
+    t.string   "formation",              limit: 20
+    t.string   "course",                 limit: 20
+    t.string   "institution",            limit: 20
+    t.string   "job",                    limit: 20
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                     default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "failed_attempts",                   default: 5,  null: false
+    t.string   "unlock_token"
+    t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
 end
