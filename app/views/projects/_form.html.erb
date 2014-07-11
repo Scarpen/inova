@@ -37,7 +37,9 @@
 			  		<div class="form-group">
 				    	<div class="col-md-12">
 				    		<div class="col-md-12">
-				    			<%= f.association :protection, collection: Protection.all, label_method: :description, as: :radio_buttons, label: false, :checked => [1]  %>
+				    			 <div class="form-inline"> 
+				    					<%= f.association :protection, collection: Protection.all, label_method: :description, as: :radio_buttons,tem_wrapper_class: 'radio-inline', label: false, :checked => [1]  %>
+				    			</div>
 			    			</div>
 			    		</div>
 			  		</div>
@@ -53,28 +55,37 @@
 	 		  		<div class="form-group">
 	 			    	<div class="col-md-12">
 	 			    		<div class="col-md-12">
-	 			    			<%= f.association :stage, collection: Stage.all, label_method: :description, as: :radio_buttons, label: false, include_blank: false, :checked => [1]  %>
+	 			    			<div class="form-inline"> 
+	 			    					<%= f.association :stage, collection: Stage.all, label_method: :description, as: :radio_buttons, label: false,tem_wrapper_class: 'radio-inline', include_blank: false, :checked => [1]  %>
+	 			    			</div>
 	 		    			</div>
 	 		    		</div>
 	 		  		</div>
 	 			  </div>
 	 		  </div>
 	 	</div>
-
-	 	<div class="page-header">
-	 		<h1><%= t '.event' %></h1>
- 		</div>
-	  <div id="events">
-	    <%= f.simple_fields_for :events do |event| %>
-	      <%= render "event_fields", :f => event %>
-	    <% end %>
-	  </div>
-  </div>
-
+		 <div class="col-md-12">
+		 	<div class="page-header">
+		 		<h1><%= t '.event' %></h1>
+	 		</div>
+ 		<div class="panel panel-primary">
+			<div class="panel-body">
+				<div id="events">
+				    <%= f.simple_fields_for :events do |event| %>
+				      <%= render "event_fields", :f => event %>
+				    <% end %>
+				    <div class="col-md-6">
+				    <%= link_to_add_association t(' '), f, :events, class: "btn btn-info btn-block glyphicon glyphicon-plus" %>
+				    </div>
+	  			</div>
+	  		</div>
+	  	</div>
+    </div>
+</div>
 	  <div class="form-actions">
 	  	<div class="row">
 	  		<div class="col-md-12">
-		  		<br><%= link_to_add_association t('links.add_event'), f, :events, class: "btn btn-info" %>
+		  		<br>
 		    	<%= f.button :submit, class: "btn btn-primary" %>
 		    	<%= link_to t('links.back'), projects_path, class: "btn btn-default" %>
 	    	</div>
