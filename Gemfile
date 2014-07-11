@@ -54,6 +54,7 @@ end
 
 group :development, :test do
   gem 'foreman'
+  gem 'mailcatcher'
 end
 
 

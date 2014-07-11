@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	devise	:database_authenticatable, :registerable,
+	devise	:database_authenticatable, :registerable, :confirmable,
 	        :trackable, :validatable
 
 	has_and_belongs_to_many :roles
