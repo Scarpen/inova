@@ -46,6 +46,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-sass'
 gem 'cocoon'
 gem 'rails-i18n'
+gem 'mailcatcher'
 
 group :production do
   gem 'pg', '0.15.1'
@@ -54,9 +55,7 @@ end
 
 group :development, :test do
   gem 'foreman'
-  gem 'mailcatcher'
 end
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
