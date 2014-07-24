@@ -224,6 +224,7 @@ pt-BR:
       project:
         title: "Título"
         description: "Descrição"
+        stage: "Estágio"
       stage:
         description: "Descrição"
       protection:
@@ -241,7 +242,7 @@ pt-BR:
         rg: "RG"
         cpf: "CPF"
         issuing_agency: "Órgão Expedidor"
-        birth_date: "Data de Nascimento"
+        birth_date: "Nascimento"
         nationality: "Nacionalidade"
         residential_address: "Endereço Residencial"
         cep: "CEP"

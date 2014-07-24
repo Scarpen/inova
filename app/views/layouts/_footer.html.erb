@@ -1,0 +1,39 @@
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 class="logo bg-dark">
+					<a href="/" style="text-decoration: none">
+						<span class="logoicon-plataforma">FabSoft - Cesupa</span>
+					</a>
+					<small style="color: #74ABC6;">é uma empresa especializada em Desenvolvimento Web.</small>
+				</h3>
+				<p style="color: #FFFFFF">Através da tecnologia Ruby on Rails, ajudamos nossos clientes a gerar mais resultados...</p>
+			</div>
+			<div class="col-md-4">
+				<h1 style="color: #98B0C1">Projetos</h1>
+				<ul>
+					<li><%= link_to 'Inovatech', root_path, class: "footer-link" %></li>
+					<li><%= link_to 'Savih', root_path, class: "footer-link" %></li>
+					<li><%= link_to 'FS-Frotas', root_path, class: "footer-link" %></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h1 style="color: #98B0C1">Sobre</h1>
+				<ul>
+					<li><%= link_to 'A Empresa', root_path, class: "footer-link" %></li>
+					<li><%= link_to 'Contato', root_path, class: "footer-link" %></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h1 style="color: #98B0C1">Serviços</h1>
+				<ul>
+					<li><%= link_to 'Consultoria', root_path, class: "footer-link" %></li>
+					<li><%= link_to 'Parceria', root_path, class: "footer-link" %></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<p style="color: #FFFFFF">Copyright © <%= Time.now.year %> FabSoft - Cesupa.</p>
+	</div>
+</div>

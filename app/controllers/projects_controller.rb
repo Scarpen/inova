@@ -1,10 +1,15 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.page(params[:page])
+    @projects = current_user.projects.page(params[:page])
+  end
+
+  def unavailable_projects
+    @projects = Project.unavailable.page(params[:page])
   end
 
   # GET /projects/1
@@ -24,7 +29,8 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
-    @project = Project.new(project_params)
+    @project = current_user.projects.new(project_params)
+    @project.situation = "unavailable"
 
     respond_to do |format|
       if @project.save

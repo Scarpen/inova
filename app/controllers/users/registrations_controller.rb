@@ -3,11 +3,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   skip_before_filter :verify_authenticity_token, :only => [:ipn_notification]
   before_action :configure_permitted_parameters
 
-  # Enviar e-mails depois de se registrar
-  def create
-    super
-    UserMailer.welcome(@user).deliver unless @user.invalid?
-  end
   
   protected
   # my custom fields are :name, :heard_how

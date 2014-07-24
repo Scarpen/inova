@@ -33,7 +33,7 @@ group :doc do
 end
 
 # Gems Externas
-gem 'simple_form'
+gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 'master'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'better_errors'
@@ -45,8 +45,6 @@ gem 'rmagick'
 gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-sass'
 gem 'cocoon'
-gem 'rails-i18n'
-gem 'mailcatcher'
 
 group :production do
   gem 'pg', '0.15.1'

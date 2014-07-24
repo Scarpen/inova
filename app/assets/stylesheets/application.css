@@ -13,44 +13,72 @@
  *= require bootstrap-datepicker3
  *= require font-awesome
  */
- 
- html,
-body {
-	margin:0;
-	padding:0;
-	height:100%;
-}
-body{
-	padding-top: 60px;
-}
 
-#header {
-	padding:10px;
-}
-#wrapper {
-	min-height:100%;
-	position:relative;
-}
-
-.content {
-	padding-bottom:200px; /* Height of the footer element */
-
-}
-#footer {
-	width:100%;
-	height:180px;
-	position:absolute;
-	bottom:-197px;
-	left:0;
- 	text-align: center;
- 	background-color: #2c3e50;
- }
- #footer p{
- 	padding-top: 20px;
- 	color:#fff;
- 	font-size: 14px;
+ body {
+ 	padding-top: 60px;
  }
 
- .carousel{
- 	margin-top:-20px; 
- }
+.navbar-nav > li > a {
+    font-weight: bold;
+}
+
+.logo {
+    display: block;
+    font-size: 3em;
+    margin: 0.25em 0px;
+    line-height: 1;
+}
+
+.logo.bg-dark span.logoicon-plataforma {
+    color: #98B0C1;
+}
+.logo span.logoicon-plataforma {
+    color: #506E84;
+}
+.logo span {
+    font-size: 1em;
+}
+
+.logo.bg-dark span.logoicon-inovatech {
+    color: #D3DBE0;
+}
+.logo span.logoicon-inovatech {
+    color: #7E8285;
+}
+.logo span {
+    font-size: 1em;
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-style: bold;
+    font-size: 25px;
+}
+
+.footer-link {
+    color: #ffffff;
+}
+
+header {
+    display: block;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    border-top: 3px solid #40586A;
+    padding: 30px 0px;
+    background-color: #506E84;
+}
+
+section.blue.light {
+    background-color: #E5E9ED;
+}
+section.blue {
+    background-color: #FFF;
+}
+.txtaligncenter, .center {
+    text-align: center;
+}
+section {
+    padding: 30px 0px 45px;
+}
+
