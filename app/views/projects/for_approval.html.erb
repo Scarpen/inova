@@ -1,0 +1,23 @@
+<div class="page-header">
+	<h1>Projects</h1>	
+</div>
+
+<% @projects.each do |p| %>
+	<div class="jumbotron">
+		<p class="<%= p.situation == "Unavailable" ? 'label label-danger' : 'label label-success' %> pull-right">
+			<%= p.situation %>
+		</p>
+		<p>
+			Título: <%= p.title %>
+		</p>
+		<p>
+			Descrição: <%= p.description %>
+		</p>
+		<p>
+			Usuário: <%= p.user.full_name %>
+		</p>
+		<div style="padding-top: 30px;">
+			<%= link_to("Aprovar", "/" , class: "btn btn-primary btn-lg") if p.situation == "Unavailable" %>
+		</div>
+	</div>
+<% end %>

@@ -8,49 +8,42 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand active" href="/"><span class="logoicon-inova">Inova</span><span class="logoicon-tech">Tech</span></a>
+      <a class="navbar-brand active" href="/">InovaTech</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
       <ul class="nav navbar-nav">
         <li class="<%= 'active' if params[:action] == 'home' %>"><a href="/"><%= t('links.home') %></a></li>
         <li class="<%= 'active' if params[:action] == 'about' %>"><%= link_to t('links.about'), welcome_about_path %></li>
         <li class="<%= 'active' if params[:controller] == 'projects' %>"><%= link_to t('links.project'), projects_path%></li>
+        
+
+        <!-- Exibe o DropDown para Admins-->
+        <% if user_signed_in? && (current_user.role?("Admin") || current_user.role?("Manager")) %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administração <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+            <li><%= link_to("Projetos", for_approval_projects_path) %></li>
+            </ul>
+          </li>        
+        <% end %>
+
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-          <li><%= link_to current_user.email, edit_user_registration_path(current_user) %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: 'delete' %></li>
-          <% else %>
-          <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to t('links.login'), "#myModal", data: {toggle: "modal"} %></li>
-          <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>"><%= link_to t('links.register'), new_user_registration_path %></li>
-          <% end %>
+        <% if user_signed_in? %>
+        <li><%= link_to current_user.email, edit_user_registration_path(current_user) %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: 'delete' %></li>
+        <% else %>
+        <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to t('links.login'), "#myModal", data: {toggle: "modal"} %></li>
+        <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>"><%= link_to t('links.register'), new_user_registration_path %></li>
+        <% end %>
       </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- Modal Login -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
- <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-       <h4 class="modal-title" id="myModalLabel">Login</h4>
-     </div>
-     <%= simple_form_for(:user, :url => session_path(:user)) do |f| %>
-     <div class="modal-body">
-       <div class="form-inputs">
-         <%= f.input :email, :required => false, :autofocus => true %>
-         <%= f.input :password, :required => false %>
-       </div>
-     </div>
-     <div class="modal-footer">
-       <%= f.button :submit, t("links.sign_in"), class: "btn btn-primary" %>
-       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-     </div>
-     <% end %>
-   </div>
- </div>
-</div>
+<%= render "layouts/modal_login" %>

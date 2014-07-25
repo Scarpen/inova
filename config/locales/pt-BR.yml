@@ -272,6 +272,7 @@ pt-BR:
       project: Projeto
       protection: Proteção
       stage: Estágio
+
     index:
       list: Listar
       project: Projetos
@@ -294,5 +295,6 @@ pt-BR:
       protection: "Proteção"
       show: "Exibir"
       date: "Data"
+      full_name: "Nome"
 
 

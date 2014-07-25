@@ -8,8 +8,9 @@ class ProjectsController < ApplicationController
     @projects = current_user.projects.page(params[:page])
   end
 
-  def unavailable_projects
-    @projects = Project.unavailable.page(params[:page])
+  # Exibe os projetos pendentes de aprovação.
+  def for_approval
+    @projects = Project.all
   end
 
   # GET /projects/1
@@ -30,7 +31,6 @@ class ProjectsController < ApplicationController
   # POST /projects.json
   def create
     @project = current_user.projects.new(project_params)
-    @project.situation = "unavailable"
 
     respond_to do |format|
       if @project.save
@@ -70,7 +70,7 @@ class ProjectsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_project
-      @project = Project.find(params[:id])
+      @project = current_user.projects.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -1,0 +1,23 @@
+<!-- Modal Login -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       <h4 class="modal-title" id="myModalLabel">Login</h4>
+     </div>
+     <%= simple_form_for(:user, :url => session_path(:user)) do |f| %>
+     <div class="modal-body">
+       <div class="form-inputs">
+         <%= f.input :email, :required => false, :autofocus => true %>
+         <%= f.input :password, :required => false %>
+       </div>
+     </div>
+     <div class="modal-footer">
+       <%= f.button :submit, t("links.sign_in"), class: "btn btn-primary" %>
+       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+     </div>
+     <% end %>
+   </div>
+ </div>
+</div>
