@@ -23,7 +23,8 @@ s3 = Stage.new
 s3.description = "Um produto e/ou serviço que já atende o mercado consumidor precisando de melhoria"
 s3.save
 
-adm = User.create!(email: "administrador@fabsoft.com", password: "123123", password_confirmation: "123123")
+adm = User.create!(email: "administrador@fabsoft.com", password: "123123", 
+		password_confirmation: "123123", full_name: "Administrador")
 adm.roles << r1
 adm.confirm!
 adm.save
