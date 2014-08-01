@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   rescue_from CanCan::AccessDenied do |exception|
-    flash[:error] = exception.message
+    flash[:alert] = exception.message
     render :file => "#{Rails.root}/public/403.html", :status => 403, :layout => false
   end
 
@@ -22,6 +22,6 @@ class ApplicationController < ActionController::Base
     else
       I18n.locale = params[:locale]
     end
-  end 
+  end
 
 end

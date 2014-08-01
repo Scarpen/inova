@@ -1,7 +1,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   
   skip_before_filter :verify_authenticity_token, :only => [:ipn_notification]
-  before_action :configure_permitted_parameters
+  before_filter :configure_permitted_parameters
 
   
   protected
@@ -17,6 +17,5 @@ class Users::RegistrationsController < Devise::RegistrationsController
         :birth_date, :nationality, :naturality, :residential_address, :cep, :city, :formation, :course, :institution, :profession)
     end
   end
-
 
 end

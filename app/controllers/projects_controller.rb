@@ -10,7 +10,19 @@ class ProjectsController < ApplicationController
 
   # Exibe os projetos pendentes de aprovação.
   def for_approval
-    @projects = Project.all
+    @projects = Project.most_recent.unapproved
+  end
+
+  def approve
+    @project = Project.find(params[:id])
+    @project.change_situation("Approved")
+    @project.save
+  end
+
+  def unapprove
+    @project = Project.find(params[:id])
+    @project.change_situation("Unapproved")
+    @project.save
   end
 
   # GET /projects/1

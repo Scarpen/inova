@@ -2,9 +2,13 @@
 	<h1>Projects</h1>	
 </div>
 
+<% if @projects.empty? %>
+	<% flash[:alert] = "Nenhum Projeto Pendente" %>
+<% end %>
+
 <% @projects.each do |p| %>
 	<div class="jumbotron">
-		<p class="<%= p.situation == "Unavailable" ? 'label label-danger' : 'label label-success' %> pull-right">
+		<p class="<%= p.situation == "Unapproved" ? 'label label-danger' : 'label label-success' %> pull-right">
 			<%= p.situation %>
 		</p>
 		<p>
@@ -17,7 +21,8 @@
 			Usuário: <%= p.user.full_name %>
 		</p>
 		<div style="padding-top: 30px;">
-			<%= link_to("Aprovar", "/" , class: "btn btn-primary btn-lg") if p.situation == "Unavailable" %>
+			<%= link_to("Aprovar", "/" , class: "btn btn-primary btn-lg") if p.situation == "Unapproved" %>
+			<%= link_to("Não Aprovar", "/" , class: "btn btn-danger btn-lg") if p.situation == "Unapproved" %>
 		</div>
 	</div>
 <% end %>

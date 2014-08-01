@@ -8,8 +8,9 @@ class Project < ActiveRecord::Base
   scope :stage_two, -> { where("stage_id = 2") }
   scope :stage_three, -> { where("stage_id = 3") }
   scope :stage_four, -> { where("stage_id = 4") }
-  scope :available, -> { where("situation = 'available'")}
-  scope :unavailable, -> { where("situation = 'unavailable'")}
+  scope :most_recent, -> { order(created_at: :asc) }
+  scope :approved, -> { where(situation: 'Approved')}
+  scope :unapproved, -> { where(situation: 'Unapproved')}
 
 
   has_many :events, dependent: :destroy
@@ -25,7 +26,7 @@ class Project < ActiveRecord::Base
   # Coloca a situação como indisponível
   # antes de salvar o projeto no banco
   def status
-    self.situation = "Unavailable"
+    self.situation = "Unapproved"
   end
 
   # Altera a situação de um projeto
