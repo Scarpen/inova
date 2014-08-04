@@ -1,5 +1,5 @@
 class Project < ActiveRecord::Base
-  before_create :status
+  before_create :initial_status
 
   validates :title, :description, presence: true
   validates :title, :description, length: { minimum: 4 }
@@ -25,7 +25,7 @@ class Project < ActiveRecord::Base
 
   # Coloca a situação como indisponível
   # antes de salvar o projeto no banco
-  def status
+  def initial_status
     self.situation = "Unapproved"
   end
 
@@ -33,8 +33,9 @@ class Project < ActiveRecord::Base
   # A situação pode ser:
   # Availabe (Disponível)
   # Unavailable (Indisponível) 
-  def change_situation(situation)
-    self.situation = situation
+  def approve!
+    self.situation = "Approved"
+    save!
   end
 
 end

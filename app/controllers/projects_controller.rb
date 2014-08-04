@@ -15,14 +15,15 @@ class ProjectsController < ApplicationController
 
   def approve
     @project = Project.find(params[:id])
-    @project.change_situation("Approved")
-    @project.save
+    @project.approve!
+
+    redirect_to for_approval_projects_path
   end
 
+  # On development
+  # Must send emails to project owen
   def unapprove
     @project = Project.find(params[:id])
-    @project.change_situation("Unapproved")
-    @project.save
   end
 
   # GET /projects/1

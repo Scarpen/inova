@@ -21,7 +21,7 @@
 			Usuário: <%= p.user.full_name %>
 		</p>
 		<div style="padding-top: 30px;">
-			<%= link_to("Aprovar", "/" , class: "btn btn-primary btn-lg") if p.situation == "Unapproved" %>
+			<%= link_to("Aprovar", approve_projects_path, class: "btn btn-primary btn-lg") if p.situation == "Unapproved" %>
 			<%= link_to("Não Aprovar", "/" , class: "btn btn-danger btn-lg") if p.situation == "Unapproved" %>
 		</div>
 	</div>
