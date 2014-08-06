@@ -17,7 +17,8 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-	height: 300px;
+	margin-top: 80px;
+	height: !important;
 }
 #footer {
 	background-color: #506E84;

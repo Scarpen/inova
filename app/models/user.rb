@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
 	after_create :assign_default_role
 
-	validates :full_name, presence: true
+	# validates :full_name, presence: true
 
 	def role?(r)
 		self.roles.each do |rl|

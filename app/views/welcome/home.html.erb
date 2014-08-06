@@ -14,14 +14,22 @@
 	</div>
 </header>
 
-
 <section class="decision blue center">
+	<div class="jumbotron"  style="margin-top: -30px" %>
+  	<h1>Comece agora!</h1>
+	  <p>A InovaTech está esperando por você</p>
+	  <% if user_signed_in? %>
+	  	<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+	  <% else %>
+	  	<%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-success btn-lg" %>
+	  	<%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
+	  <% end %>
+	</div>
 	<div class="container">
-		<h1>Comece agora!</h1>
 		<div class="row" style="padding: 30px;">
 
-			<div class="col-xs-12 col-sm-12 col-md-4 learn">
-				<div class="panel panel-default">
+			<div class="col-md-4">
+				<div class="panel panel-default" style="overflow:hidden">
 					<div class="panel-body">
 						<span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
 						<h2>Acompanhe o desenvolvimento dos seus projetos</h2>
@@ -33,7 +41,7 @@
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-4 rate">
-				<div class="panel panel-default">
+				<div class="panel panel-default" style="overflow:hidden">
 					<div class="panel-body">
 						<span class="glyphicon glyphicon-facetime-video well" style="font-size: 60px"></span>
 						<h2>Quero ver uma demonstração</h2>
@@ -46,7 +54,7 @@
 			</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-4 buy">
-					<div class="panel panel-default">
+					<div class="panel panel-default" style="overflow:hidden">
 						<div class="panel-body">
 							<span class="glyphicon glyphicon-plane well" style="font-size: 60px"></span>
 							<h2>Quero acelerar meus resultados agora</h2>

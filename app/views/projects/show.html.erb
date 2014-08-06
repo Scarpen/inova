@@ -2,7 +2,7 @@
 	<h1><%= t '.show' %> <%= t '.project' %></h1>
 </div>
 
-<div class="panel panel-primary">
+<div class="panel panel-primary" style="word-break: break-all">
   <div class="panel-heading">
     <h3 class="panel-title"><%= t '.project' %><span class="<%= @project.situation == "Unavailable" ? 'label label-danger' : 'label label-success' %> pull-right">
       <%= @project.situation %>
