@@ -22,7 +22,7 @@ class Project < ActiveRecord::Base
 
   paginates_per 10
 
-
+  #  testando noovo add no git
   # Coloca a situação como indisponível
   # antes de salvar o projeto no banco
   def initial_status
