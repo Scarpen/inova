@@ -5,7 +5,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
-      #Autor      
+      #Author      
       t.string :full_name, limit: 80
       t.string :username
       t.string :phone

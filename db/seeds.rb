@@ -25,6 +25,6 @@ s3.save
 
 adm = User.create!(email: "administrador@fabsoft.com", password: "123123", 
 		password_confirmation: "123123", full_name: "Administrador", username: "Administrador")
-adm.roles << r1
+# adm.roles << r1
 adm.confirm!
 adm.save

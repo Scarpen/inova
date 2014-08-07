@@ -1,14 +1,8 @@
 PlataformaInovatech::Application.routes.draw do
 
-  resources :projects do
-    collection do
-      get :for_approval
-      put :approve, key: :id
-    end
-  end
+  resources :projects
 
-
-  devise_for :users
+  devise_for :users, controllers: { registrations: "users/registrations" }
   
   get "welcome/about"
   root 'welcome#home'
