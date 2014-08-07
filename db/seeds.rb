@@ -3,11 +3,18 @@ r1 = Role.new
 r1.name = "Admin"
 r1.save
 r2 = Role.new
-r2.name = "Manager"
+r2.name = "Partaker"
 r2.save
 r3 = Role.new
-r3.name = "Partaker"
+r3.name = "Visitor"
 r3.save
+
+# Criação dos Profiles
+p = Profile.new(name: "Manager")
+p.save
+
+p2 = Profile.new(name: "Collaborator")
+p2.save
 
 # Criação dos Estágios dos Projetos
 s = Stage.new
@@ -25,6 +32,6 @@ s3.save
 
 adm = User.create!(email: "administrador@fabsoft.com", password: "123123", 
 		password_confirmation: "123123", full_name: "Administrador", username: "Administrador")
-# adm.roles << r1
+adm.role = r1
 adm.confirm!
 adm.save

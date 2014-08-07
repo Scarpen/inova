@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140722023913) do
+ActiveRecord::Schema.define(version: 20140807184805) do
 
   create_table "events", force: true do |t|
     t.string   "description"
@@ -23,6 +23,12 @@ ActiveRecord::Schema.define(version: 20140722023913) do
 
   add_index "events", ["project_id"], name: "index_events_on_project_id", using: :btree
 
+  create_table "profiles", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "projects", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -30,12 +36,10 @@ ActiveRecord::Schema.define(version: 20140722023913) do
     t.integer  "protection_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   add_index "projects", ["protection_id"], name: "index_projects_on_protection_id", using: :btree
   add_index "projects", ["stage_id"], name: "index_projects_on_stage_id", using: :btree
-  add_index "projects", ["user_id"], name: "index_projects_on_user_id", using: :btree
 
   create_table "protections", force: true do |t|
     t.text     "description"
@@ -92,11 +96,25 @@ ActiveRecord::Schema.define(version: 20140722023913) do
     t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "role_id"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["role_id"], name: "index_users_on_role_id", using: :btree
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
+
+  create_table "users_projects_profiles", id: false, force: true do |t|
+    t.integer  "user_id"
+    t.integer  "project_id"
+    t.integer  "profile_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users_projects_profiles", ["profile_id"], name: "index_users_projects_profiles_on_profile_id", using: :btree
+  add_index "users_projects_profiles", ["project_id"], name: "index_users_projects_profiles_on_project_id", using: :btree
+  add_index "users_projects_profiles", ["user_id"], name: "index_users_projects_profiles_on_user_id", using: :btree
 
 end

@@ -7,9 +7,11 @@ class Project < ActiveRecord::Base
   has_many :events, dependent: :destroy
   accepts_nested_attributes_for :events, 
     :reject_if => :all_blank, :allow_destroy => true
+  has_many :users_projects_profiles
+  has_many :users, through: :users_projects_profiles
+  has_many :profiles, through: :users_projects_profiles
   belongs_to :protection
   belongs_to :stage
-  belongs_to :user
 
   paginates_per 10
 
