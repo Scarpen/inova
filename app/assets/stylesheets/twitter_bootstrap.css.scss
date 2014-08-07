@@ -7,6 +7,7 @@ body {
 
 /* Wrapper for page content to push down footer */
 #wrap {
+	overflow:hidden;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -34,6 +35,7 @@ body {
 	}
 }
 // Fim das Configurações do Footer
+
 // .icon {
 //     padding-left: 22px;
 //     margin-right: 5px;
@@ -59,7 +61,6 @@ body {
 
 .tt-wrapper{
 	padding: 0;
-	width: 100%;
 	height: 100%;
 	margin-left: 40%;
 }
