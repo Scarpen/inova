@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140801233312) do
+ActiveRecord::Schema.define(version: 20140722023913) do
 
   create_table "events", force: true do |t|
     t.string   "description"
@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 20140801233312) do
     t.integer  "protection_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "situation"
     t.integer  "user_id"
   end
 
@@ -49,14 +48,6 @@ ActiveRecord::Schema.define(version: 20140801233312) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "roles_users", id: false, force: true do |t|
-    t.integer "role_id"
-    t.integer "user_id"
-  end
-
-  add_index "roles_users", ["role_id"], name: "index_roles_users_on_role_id", using: :btree
-  add_index "roles_users", ["user_id"], name: "index_roles_users_on_user_id", using: :btree
 
   create_table "stages", force: true do |t|
     t.text     "description"
@@ -101,8 +92,6 @@ ActiveRecord::Schema.define(version: 20140801233312) do
     t.datetime "locked_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "provider"
-    t.string   "uid"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
