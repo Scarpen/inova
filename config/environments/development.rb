@@ -37,4 +37,6 @@ PlataformaInovatech::Application.configure do
 
 
   config.i18n.available_locales = ['pt-BR', :pt]
+  I18n.enforce_available_locales = false
+  
 end

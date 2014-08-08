@@ -7,7 +7,11 @@ class User < ActiveRecord::Base
   has_many :projects, through: :users_projects_profiles
   has_many :profiles, through: :users_projects_profiles
 
-  validates :full_name, presence: true
+  validates :full_name, :username, :phone, :rg,
+  :issuing_agency, :issuing_date, :cpf, :birth_date,
+  :nationality, :naturality, :residential_address,
+  :cep, :city, :formation, :course, :institution,
+  :job, presence: true
 
   before_save :initial_assign
 

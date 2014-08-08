@@ -60,6 +60,9 @@ body {
 //     background-image: url(icon-gplus.png);
 // }
 
+	body{
+		background: url(/assets/bg.png) repeat;
+	}
 .tt-wrapper{
 	padding: 0;
 	height: 100%;
@@ -148,6 +151,7 @@ body {
 	$link-color: #55738A;
 	$jumbotron-color: #2F79A1;
 	$jumbotron-bg: #ffffff;
+	
 
 
 	// $font-family-sans-serif: 

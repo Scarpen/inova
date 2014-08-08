@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140807184805) do
+ActiveRecord::Schema.define(version: 20140808123311) do
 
   create_table "events", force: true do |t|
     t.string   "description"
@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 20140807184805) do
     t.integer  "protection_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
+    t.string   "visibility"
+    t.text     "feedback"
   end
 
   add_index "projects", ["protection_id"], name: "index_projects_on_protection_id", using: :btree
