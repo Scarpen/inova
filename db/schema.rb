@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140808123311) do
+ActiveRecord::Schema.define(version: 20140808130201) do
 
   create_table "events", force: true do |t|
     t.string   "description"
@@ -109,11 +109,9 @@ ActiveRecord::Schema.define(version: 20140808123311) do
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
   create_table "users_projects_profiles", id: false, force: true do |t|
-    t.integer  "user_id"
-    t.integer  "project_id"
-    t.integer  "profile_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "user_id"
+    t.integer "project_id"
+    t.integer "profile_id"
   end
 
   add_index "users_projects_profiles", ["profile_id"], name: "index_users_projects_profiles_on_profile_id", using: :btree
