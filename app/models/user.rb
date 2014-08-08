@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   before_save :initial_assign
 
   def role?(r)
-  	self.role.name == r
+  	self.role[:name] == r
   end
 
   private
