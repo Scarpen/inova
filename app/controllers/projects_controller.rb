@@ -8,24 +8,6 @@ class ProjectsController < ApplicationController
     @projects = current_user.projects.page(params[:page])
   end
 
-  # Exibe os projetos pendentes de aprovação.
-  def for_approval
-    @projects = Project.most_recent.unapproved
-  end
-
-  def approve
-    @project = Project.find(params[:id])
-    @project.approve!
-
-    redirect_to for_approval_projects_path
-  end
-
-  # On development
-  # Must send emails to project owen
-  def unapprove
-    @project = Project.find(params[:id])
-  end
-
   # GET /projects/1
   # GET /projects/1.json
   def show

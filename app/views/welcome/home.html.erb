@@ -1,113 +1,130 @@
-<%# this DIV close container of layout  %>
-</div>
+	<%# this DIV close container of layout  %>
+	</div>
 
-<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5">
-				<a class="logo bg-dark" style="text-decoration: none" href="/">
-					<span class="logoicon-plataforma">Plataforma</span>
-					<span class="logoicon-inovatech">Inovatech</span>
-				</a>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<a class="logo bg-dark" style="text-decoration: none" href="/">
+						<span class="logoicon-plataforma">Plataforma</span>
+						<span class="logoicon-inovatech">Inovatech</span>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-</header>
+	</header>
 
+	<section class="decision blue center">
+		<div class="jumbotron"  style="margin-top: -30px" %>
+	  	<h1>Comece agora!</h1>
+		  <p>A InovaTech está esperando por você</p>
+		  <% if user_signed_in? %>
+		  	<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+		  <% else %>
+		  	<%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-success btn-lg" %>
+		  	<%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		  <% end %>
+		</div>
+		<div class="container">
+			<div class="row" style="padding: 30px;">
 
-<section class="decision blue center">
-	<div class="container">
-		<h1>Comece agora!</h1>
-		<div class="row" style="padding: 30px;">
-
-			<div class="col-xs-12 col-sm-12 col-md-4 learn">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
-						<h2>Acompanhe o desenvolvimento dos seus projetos</h2>
-						<p class="lead">Cadastre projetos, sua equipe e gerencie-os</p>
-						<p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg" %></p>
-						<hr class="visible-xs visible-sm"/>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-12 col-md-4 rate">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<span class="glyphicon glyphicon-facetime-video well" style="font-size: 60px"></span>
-						<h2>Quero ver uma demonstração</h2>
-						<div class="rounded-icons xicon-copy"></div>
-						<p class="lead">Veja em mais detalhes e vídeos como o software funciona</p>
-						<p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
-						<hr class="visible-xs visible-sm"/>
-					</div>
-				</div>
-			</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-4 buy">
-					<div class="panel panel-default">
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<div class="panel panel-default" style="overflow:hidden">
 						<div class="panel-body">
-							<span class="glyphicon glyphicon-plane well" style="font-size: 60px"></span>
-							<h2>Quero acelerar meus resultados agora</h2>
-							<div class="rounded-icons xicon-rocket"></div>
-							<p class="lead">Use o Inovatech para aumentar a produtividade dos seus projetos</p>
-							<p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
+							<span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
+							<h2>Acompanhe o desenvolvimento dos seus projetos</h2>
+							<p class="lead">Cadastre projetos, sua equipe e gerencie-os</p>
+							<p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg" %></p>
+							<hr class="visible-xs visible-sm"/>
 						</div>
 					</div>
 				</div>
 
-			</div><%# end row %>
-		</div><%# end container %>
-	</section>
-
-
-	<section class="social-proof blue light center">
-		<div class="container">
-			<h1>Junte-se a <strong>dezenas</strong> de pessoas <strong>que acompanham e <p>recomendam</p></strong></h1><br>
-			<div class="row">
-
-
-				<div class="col-sm-6 col-md-4">
-					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fabsoftcesupa/favorites"  data-widget-id="491093024684793857">Tweets que @fabsoftcesupa curtiu</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
-						"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						<hr class="visible-xs visible-sm"/>
+				<div class="col-xs-12 col-sm-12 col-md-4">
+					<div class="panel panel-default" style="overflow:hidden">
+						<div class="panel-body">
+							<span class="glyphicon glyphicon-facetime-video well" style="font-size: 60px"></span>
+							<h2>Quero ver uma demonstração</h2>
+							<div class="rounded-icons xicon-copy"></div>
+							<p class="lead">Veja em mais detalhes e vídeos como o software funciona</p>
+							<p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
+							<hr class="visible-xs visible-sm"/>
+						</div>
 					</div>
-					<div class="col-sm-6 col-md-4">
+				</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-4">
+						<div class="panel panel-default" style="overflow:hidden">
+							<div class="panel-body">
+								<span class="glyphicon glyphicon-plane well" style="font-size: 60px"></span>
+								<h2>Quero acelerar meus resultados agora</h2>
+								<div class="rounded-icons xicon-rocket"></div>
+								<p class="lead">Use o Inovatech para aumentar a produtividade dos seus projetos</p>
+								<p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
+							</div>
+						</div>
+					</div>
+
+				</div><%# end row %>
+			</div><%# end container %>
+		</section>
+
+
+		<section class="social-proof blue light center">
+			<div class="container">
+				<h1>Junte-se a <strong>dezenas</strong> de pessoas <strong>que acompanham e <p>recomendam</p></strong></h1><br>
+				<div class="row">
+
+					<div class="col-md-4">
 						<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffabsoft&amp&amp;width=The+pixel+width+of+the+plugin&amp;height=426&amp;colorscheme=light&amp;
 						show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;width=426" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%;
 						height:426px;background-color:#ffffff" allowTransparency="false" ></iframe>
 						<hr class="visible-xs visible-sm"/>        
 					</div>
-					<div class="col-sm-6 col-md-4">
-						<p class="lead">Conecte-se também e fique atualizado</p>
 
-						<p class="follow twitter">
-							<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block">
-								<i class="xicon-twitter"></i>
-								Siga-nos no Twitter
-							</a>
-						</p>
-						<p class="follow facebook">
-							<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block">
-								<i class="xicon-facebook"></i>
-								Curta-nos no Facebook
-							</a>
-						</p>
-						<p class="follow linkedin">
-							<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block">
-								<i class="xicon-linkedin"></i>
-								Siga-nos no Linkedin
-							</a>
-						</p>
-						<p class="follow google-plus">
-							<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block">
-								<i class="xicon-google-plus"></i>
-								Adicione-nos no Google Plus
-							</a>
-						</p>
+					<div class="col-md-4">
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fabsoftcesupa/favorites"  data-widget-id="491093024684793857">Tweets que @fabsoftcesupa curtiu</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
+							"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<hr class="visible-xs visible-sm"/>
+					</div>
+						<!-- <div class="col-sm-6 col-md-4">
+							<p class="lead">Conecte-se também e fique atualizado</p>
+
+							<p class="follow twitter">
+								<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block btn-lg" style="text-align: left;">
+									<i class="icon twitter"></i>
+									 Siga-nos no Twitter
+								</a>
+							</p>
+							<p class="follow facebook">
+								<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block btn-lg" style="text-align: left;">
+									<i class="icon face"></i>
+									 Curta-nos no Facebook
+								</a>
+							</p>
+							<p class="follow linkedin">
+								<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block btn-lg" style="text-align: left;">
+									<i class="icon ln"></i>
+									 Siga-nos no Linkedin
+								</a>
+							</p>
+							<p class="follow google-plus">
+								<a href="http://facebook.com/fabsoft" target="_blank" class="btn btn-primary btn-block btn-lg"style="text-align: left;">
+									<i class="icon gplus"></i>
+									 Adicione-nos no Google Plus
+								</a>
+							</p>
+						</div> -->
+						<div class="col-md-4">
+							<p class="lead">Conecte-se também e fique atualizado</p>
+							<ul class="tt-wrapper">
+		    				<li><a class="tt-gplus" href="#"><span>Adicione-nos no Google Plus</span></a></li>
+		    				<li><a class="tt-twitter" href="#"><span>Siga-nos no Twitter</span></a></li>
+						    <li><a class="tt-facebook" href="http://facebook.com/fabsoft"><span>Curta-nos no Facebook</span></a></li>
+						    <li><a class="tt-linkedin" href="#"><span>Siga-nos no Linkedin</span></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
