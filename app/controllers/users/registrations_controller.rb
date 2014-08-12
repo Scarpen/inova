@@ -13,7 +13,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
         :birth_date, :nationality, :naturality, :residential_address, :cep, :city, :formation, :course, :institution, :profession)
     end
     devise_parameter_sanitizer.for(:account_update) do |u|
-      u.permit(:email, :password, :password_confirmation, :full_name, :user_name, :phone_number, :rg, :issuing_agency, :issuing_date, :cpf, 
+      u.permit(:email, :password, :password_confirmation, :current_password, :full_name, :user_name, :phone_number, :rg, :issuing_agency, :issuing_date, :cpf, 
         :birth_date, :nationality, :naturality, :residential_address, :cep, :city, :formation, :course, :institution, :profession)
     end
   end

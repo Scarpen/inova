@@ -46,6 +46,9 @@ pt-BR:
         title: "Registrar-se"
         personal: "Dados Pessoais"
         comercial: "Dados Comerciais"
+      edit:
+        title: "Editar"
+        Cancel My Account: "Cancelar Minha Conta"
     sessions:
       signed_in: 'Login efetuado com sucesso!'
       signed_out: 'Saiu com sucesso.'

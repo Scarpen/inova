@@ -252,6 +252,7 @@ pt-BR:
         institution: "Instituição"
         job: "Profissão"
         newsletter: "Desejo receber informações e novidades do Inovatech no meu e-mail"
+        current_password: "Senha Atual"
   links:
     back: Voltar
     add_event: Adicionar Evento
@@ -265,6 +266,7 @@ pt-BR:
     register: Registrar-se
     sign_up: Inscrever-se
     sign_in: Entrar
+    update: "Atualizar"
   projects:
     new:
       title: Cadastro
@@ -273,7 +275,6 @@ pt-BR:
       project: Projeto
       protection: Proteção
       stage: Estágio
-
     index:
       list: Listar
       project: Projetos
