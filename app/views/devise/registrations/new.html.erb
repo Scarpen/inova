@@ -42,7 +42,7 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-2">
-            <%= f.input :phone, autofocus: false, input_html: { id: "phone" } %>
+            <%= f.input :phone, input_html: { id: "phone" } %>
           </div>
           <div class="col-md-2">
             <%= f.input :rg %>
@@ -103,6 +103,11 @@
     </div>
   </div>
 </div>
+
+<%= f.input :newsletter , as: :radio_buttons, 
+  wrapper: :vertical_radio_and_checkboxes,
+  include_blank: false %>
+
 <div class="btnsignup">
 <%= f.submit t("links.sign_up"), class: "btn btn-primary", style: "margin: 15px;" %>
 <%= render "devise/shared/links" %>

@@ -251,6 +251,7 @@ pt-BR:
         course: "Curso"
         institution: "Instituição"
         job: "Profissão"
+        newsletter: "Desejo receber informações e novidades do Inovatech no meu e-mail"
   links:
     back: Voltar
     add_event: Adicionar Evento

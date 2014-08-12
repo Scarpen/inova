@@ -16,6 +16,9 @@ p.save
 p2 = Profile.new(name: "Collaborator")
 p2.save
 
+p3 = Profile.new(name: "Evaluator")
+p3.save
+
 # Criação dos Estágios dos Projetos
 s = Stage.new
 s.description = "Uma idéia já descrita com detalhamento das etapas do processo de desenvolvimento"
