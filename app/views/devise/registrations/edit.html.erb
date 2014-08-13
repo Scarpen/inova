@@ -108,7 +108,9 @@
   wrapper: :vertical_radio_and_checkboxes,
   include_blank: false %>
 
-<%= f.input :current_password %>
+<% if f.object.encrypted_password.present? %>
+  <%= f.input :current_password %>
+<% end %>
 
 <div class="btnsignup">
 <%= f.submit t("links.update"), class: "btn btn-primary", style: "margin: 15px;" %>

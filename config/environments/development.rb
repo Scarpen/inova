@@ -38,5 +38,8 @@ PlataformaInovatech::Application.configure do
 
   config.i18n.available_locales = ['pt-BR', :pt]
   I18n.enforce_available_locales = false
+
+  ENV["TWITTER_CONSUMER_KEY"] = "BIQtFknzKvizr68lw30EnkrhQ"
+  ENV["TWITTER_CONSUMER_SECRET"] = "RhuWj4Y7SdMVAhnTRCB1uFlHE63hUTiaWH7KxmQx3eJM2RABTV"
   
 end

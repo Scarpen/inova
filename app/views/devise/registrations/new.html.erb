@@ -27,12 +27,14 @@
           <div class="col-md-3">
             <%= f.input :username %>
           </div>
-          <div class="col-md-3">
-            <%= f.input :password, autocomplete: "off" %>
-          </div>
-          <div class="col-md-3">
-            <%= f.input :password_confirmation, autocomplete: "off" %>
-          </div>
+          <% if f.object.password_required?  %>
+            <div class="col-md-3">
+              <%= f.input :password, autocomplete: "off" %>
+            </div>
+            <div class="col-md-3">
+              <%= f.input :password_confirmation, autocomplete: "off" %>
+            </div>
+          <% end %>
           <div class="col-md-3">
             <%= f.input :naturality %>
           </div>
