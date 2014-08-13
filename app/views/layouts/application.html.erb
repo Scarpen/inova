@@ -14,16 +14,47 @@
 	<%= javascript_include_tag 'application' %>
 </head>
 
-<body>
-	<%= render 'layouts/navbar' %>
-	<%= render 'layouts/messages' %>
-	<div id="wrap">
-		<div class="container">
-			<%= yield %>
+	
+	<body>
+		
+
+		<div id="wrap">
+			<div id="st-container" class="st-container">
+				<% if user_signed_in? %>
+	      	<nav class="st-menu st-effect-1" id="menu-1">
+	          <h2 class="">Nome</h2>
+	          <ul>
+	            <li><a class="" href="#">Meu perfil</a></li>
+	            <li><a class="" href="#">Minhas ideias</a></li>
+	            <li><a class="" href="#">Item 3</a></li>
+	            <li><a class="" href="#">Item 4</a></li>
+	            <li><a class="" href="#">Opções</a></li>
+	          </ul>
+	      	</nav>
+
+		      <div class="st-content"><!-- this is the wrapper for the content -->
+		        <div class="main clearfix">
+		          <div id="st-trigger-effects">
+		            <button id="st-effect-1" class="btn btn-default"><span class="glyphicon glyphicon-th-list"></span> Menu</button>
+		          </div>
+		        </div><!-- /st-content-inner -->
+		      </div><!-- /st-content -->
+		    <%end%>
+
+	      <%= render 'layouts/navbar' %>
+				<%= render 'layouts/messages' %>
+			
+				<div class="container">
+					<%= yield %>
+				</div><!-- /st-container -->
+				
+			</div>
 		</div>
-		<div id="push"></div>
-	</div>
-	<%= render 'layouts/footer' %>
-</body>
+				<%= render 'layouts/footer' %>
+	
+	</body>
+<script src="/assets/classie.js"></script>
+<script src="/assets/sidebarEffects.js"></script>
+
 
 </html>
