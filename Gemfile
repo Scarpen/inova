@@ -45,7 +45,6 @@ gem 'rmagick'
 gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-sass'
 gem 'cocoon'
-gem 'gravtastic'
 
 group :production do
   gem 'pg', '0.15.1'
