@@ -16,8 +16,12 @@
      <div class="modal-footer">
        <%= f.button :submit, t("links.sign_in"), class: "btn btn-primary" %>
        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+       <p style="margin: 15px">
+          <%= link_to "Sign in with Twitter", user_omniauth_authorize_path(:twitter), class: "btn btn-lg btn-default  col-md-12"  %>
+       </p>
      </div>
      <% end %>
+
    </div>
  </div>
 </div>
