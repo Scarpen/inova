@@ -1,29 +1,33 @@
   <%# this DIV close container of layout  %>
 </div>  
 <header>
-  <div class="container">
+<div class="container">
+  <section class="center">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-12">
         <a class="logo bg-dark" style="text-decoration: none" href="/">
           <span class="logoicon-plataforma">Plataforma</span>
           <span class="logoicon-inovatech">Inovatech</span>
         </a>
       </div>
     </div>
+    <div>
+    <div class="txtindex">
+      <h1>Comece agora!</h1>
+      <p>A InovaTech está esperando por você</p>
+      <% if user_signed_in? %>
+        <%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+      <% else %>
+        <%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-primary btn-lg" %>
+        <%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
+      <% end %>
+    </div>
+    </section>
   </div>
+</div>
 </header>
 
 <section class="center">
-  <div>
-    <h1>Comece agora!</h1>
-    <p>A InovaTech está esperando por você</p>
-    <% if user_signed_in? %>
-      <%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
-    <% else %>
-      <%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-success btn-lg" %>
-      <%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
-    <% end %>
-  </div>
 
   <div class="container">
     <div class="row" style="padding: 30px;">

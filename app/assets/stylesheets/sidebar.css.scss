@@ -95,7 +95,8 @@ transform: scale(1.2);
 	visibility: hidden;
 	width: 300px;
 	height: 100%;
-	background: #506E84;
+	background: #02B3A1;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -141,6 +142,7 @@ transform: scale(1.2);
 .st-menu ul li a {
 	display: block;
 	padding: 1em 1em 1em 1.2em;
+	text-decoration: none;
 	outline: none;
 	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
 	color: #f3efe0;
@@ -160,6 +162,9 @@ transform: scale(1.2);
 	background: rgba(0,0,0,0.2);
 	box-shadow: inset 0 -1px rgba(0,0,0,0);
 	color: #fff;
+}
+#logout a:hover {
+	background: rgba(167,011,011,0.8);
 }
 
 

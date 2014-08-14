@@ -22,15 +22,17 @@
     font-weight: bold;
 }
 
+
 .logo {
     display: block;
-    font-size: 3em;
+    font-size: 4em;
     margin: 0.25em 0px;
     line-height: 1;
 }
 
 .logo.bg-dark span.logoicon-plataforma {
-    color: #98B0C1;
+    font-family: 'Pacifico', cursive;
+    color: #A6F8F0;
 }
 .logo span.logoicon-plataforma {
     color: #506E84;
@@ -40,7 +42,8 @@
 }
 
 .logo.bg-dark span.logoicon-inovatech {
-    color: #D3DBE0;
+    font-family: 'Pacifico', cursive;
+    color: #CDFFFA;
 }
 .logo span.logoicon-inovatech {
     color: #7E8285;
@@ -64,13 +67,13 @@ header {
     height: auto;
     width: auto;
     overflow: visible;
-    border-top: 3px solid #40586A;
     padding: 30px 0px;
-    background-color: #506E84;
+    background-color: #02B3A1;
 }
 
 section.blue.light {
-    background-color: #E5E9ED;
+    background-color: #D8D8D8;
+    margin-bottom: 40px;
 }
 section.blue {
     background-color: #FFF;
@@ -82,3 +85,6 @@ section {
     padding: 30px 0px 45px;
 }
 
+.txtindex{
+    color:#fff;
+}

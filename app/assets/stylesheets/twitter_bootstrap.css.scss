@@ -19,11 +19,10 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-	margin-top: 80px;
 	height: !important;
 }
 #footer {
-	background-color: #506E84;
+	background-color:  #02B3A1;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -59,10 +58,13 @@ body {
 // .icon.gplus {
 //     background-image: url(icon-gplus.png);
 // }
+.alert-success{
+	position:absolute;
+	width: 100%;
+	left:0;
+	text-align: center;
 
-	body{
-		background: url(/assets/bg.png) repeat;
-	}
+}
 .tt-wrapper{
 	padding: 0;
 	height: 100%;
@@ -145,10 +147,10 @@ body {
 
 // Less Variables
 	// Inheritance
-	$brand-primary: #406F95;
+	$brand-primary: #02B3A1;
 	$body-bg: #EDE9E5;
-	$text-color: #55738A;
-	$link-color: #55738A;
+	$text-color: #02B3A1;
+	$link-color: #02B3A1;
 	$jumbotron-color: #2F79A1;
 	$jumbotron-bg: #ffffff;
 	
@@ -159,7 +161,7 @@ body {
 
 	// navbar
 	$navbar-default-bg: #ffffff;
-	$navbar-default-link-color: #406F95;
+	$navbar-default-link-color: #02B3A1;
 	$navbar-default-border: #406F95;
 	$navbar-height: 60px;
 

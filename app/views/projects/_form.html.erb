@@ -1,11 +1,10 @@
 <%= simple_form_for @project do |f| %>
-
-<%= f.error_notification %>
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<h3 class="panel-title"><%= t '.project' %></h3>
 	</div>
 	<div class="panel-body">
+		<%= f.error_notification %>
 		<div class="form-inputs">
 
 			<div class="form-group">

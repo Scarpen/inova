@@ -22,13 +22,13 @@
 			<div id="st-container" class="st-container">
 				<% if user_signed_in? %>
 	      	<nav class="st-menu st-effect-1" id="menu-1">
-	          <h2 class="">Nome</h2>
+	          <h2 class=""><%= image_tag avatar_url(current_user,80) %> <%= current_user.full_name %></h2>
 	          <ul>
-	            <li><a class="" href="#">Meu perfil</a></li>
-	            <li><a class="" href="#">Minhas ideias</a></li>
-	            <li><a class="" href="#">Item 3</a></li>
-	            <li><a class="" href="#">Item 4</a></li>
-	            <li><a class="" href="#">Opções</a></li>
+	            <li><a class="" href="#"><span class="glyphicon glyphicon-user"></span> Meu perfil</a></li>
+	            <li><a class="" href="#"><span class="glyphicon glyphicon-star"></span> Minhas ideias</a></li>
+	            <li><a class="" href="#"><span class="glyphicon glyphicon-cog"></span> Opções</a></li>
+	            <li><%= link_to " Editar Perfil", edit_user_registration_path(current_user), class: "glyphicon glyphicon-pencil" %></li>
+               <li id="logout"> <%= link_to " Logout", destroy_user_session_path, method: 'delete',class: "glyphicon glyphicon-remove-sign" %></li>
 	          </ul>
 	      	</nav>
 	      	<div id="st-trigger-effects">
