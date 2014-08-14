@@ -22,6 +22,7 @@
 			<div id="st-container" class="st-container">
 				<% if user_signed_in? %>
 	      	<nav class="st-menu st-effect-1" id="menu-1">
+	          <%= image_tag avatar_url(current_user, 80) %>
 	          <h2 class="">Nome</h2>
 	          <ul>
 	            <li><a class="" href="#">Meu perfil</a></li>
