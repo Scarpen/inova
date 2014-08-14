@@ -1,28 +1,5 @@
-class User < ActiveRecord::Base
+module Social
 
-	include Social
-
-	devise  :database_authenticatable, :registerable, :confirmable,
-	:trackable, :validatable, :omniauthable
-
-	belongs_to :role
-	has_and_belongs_to_many :projects, join_table: "users_projects_profiles"
-	has_and_belongs_to_many :profiles, join_table: "users_projects_profiles"
-
-	# validates :full_name, :username, :phone, :rg,
-	# :issuing_agency, :issuing_date, :cpf, :birth_date,
-	# :nationality, :naturality, :residential_address,
-	# :cep, :city, :formation, :course, :institution,
-	# :job, presence: true
-
-	before_save :initial_assign
-
-	def role?(r)
-		self.role[:name] == r
-	end
-
-
-	# Daqui pra baixo -- Login com Omniauth
 	def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
 		user = User.where(:provider => auth.provider, :uid => auth.uid).first
 		if user
@@ -63,11 +40,25 @@ class User < ActiveRecord::Base
 		end
 	end
 
-private
-
-	# Atribui a role de Partaker a todos os usuários que se cadastrarem
-	def initial_assign
-		self.role = Role.find_by(name: "Partaker")
-	end
+	def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
+		data = access_token.info
+		user = User.where(:provider => access_token.provider, :uid => access_token.uid).first
+		if user
+			return user
+		else
+			registered_user = User.where(:email => access_token.info.email).first
+			if registered_user
+				return registered_user
+			else
+				user = User.create(full_name: data["name"],
+					provider: access_token.provider,
+					email: data["email"],
+					uid: access_token.uid,
+					password: Devise.friendly_token[0,20])
+				user.skip_confirmation!
+				user
+			end
+		end
+	end		
 
 end

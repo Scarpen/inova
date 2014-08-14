@@ -46,6 +46,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-sass'
 gem 'cocoon'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :production do
   gem 'pg', '0.15.1'

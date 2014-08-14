@@ -41,5 +41,7 @@ PlataformaInovatech::Application.configure do
 
   ENV["TWITTER_CONSUMER_KEY"] = "BIQtFknzKvizr68lw30EnkrhQ"
   ENV["TWITTER_CONSUMER_SECRET"] = "RhuWj4Y7SdMVAhnTRCB1uFlHE63hUTiaWH7KxmQx3eJM2RABTV"
-  
+  ENV["FACEBOOK_APP_ID"] = "799390066759975"
+  ENV["FACEBOOK_APP_SECRET"] = "bb37f824345f1c632a6d39d61ff8ed2d"
+
 end

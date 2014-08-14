@@ -27,14 +27,12 @@
           <div class="col-md-3">
             <%= f.input :username %>
           </div>
-          <% if f.object.password_required?  %>
-            <div class="col-md-3">
-              <%= f.input :password, autocomplete: "off" %>
-            </div>
-            <div class="col-md-3">
-              <%= f.input :password_confirmation, autocomplete: "off" %>
-            </div>
-          <% end %>
+          <div class="col-md-3">
+            <%= f.input :password, autocomplete: "off" %>
+          </div>
+          <div class="col-md-3">
+            <%= f.input :password_confirmation, autocomplete: "off" %>
+          </div>
           <div class="col-md-3">
             <%= f.input :naturality %>
           </div>
@@ -107,12 +105,12 @@
 </div>
 
 <%= f.input :newsletter , as: :radio_buttons, 
-  wrapper: :vertical_radio_and_checkboxes,
-  include_blank: false %>
+wrapper: :vertical_radio_and_checkboxes,
+include_blank: false %>
 
 <div class="btnsignup">
-<%= f.submit t("links.sign_up"), class: "btn btn-primary", style: "margin: 15px;" %>
-<%= render "devise/shared/links" %>
+  <%= f.submit t("links.sign_up"), class: "btn btn-primary", style: "margin: 15px;" %>
+  <%= render "devise/shared/links" %>
 </div>
 <% end %>
 
