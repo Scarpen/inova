@@ -17,8 +17,8 @@
         <div class="modal-footer">
           </br>
           <p style="text-align: center">Ou conecte-se usando as redes sociais</p>
-          <p><%= link_to " Sign in with Twitter", user_omniauth_authorize_path(:twitter), class: " btn btn-lg btn-default  col-xs-12 col-md-12 fa fa-twitter-square"  %></p>
-          <p><%= link_to " Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-lg btn-default  col-xs-12 col-md-12 fa fa-facebook-square"  %></p>
+          <p><%= link_to " Sign in with Twitter", user_omniauth_authorize_path(:twitter), class: " btn btn-lg btn-info  col-xs-12 col-md-12 fa fa-twitter", id: "btn-twitter"  %></p>
+          <p><%= link_to " Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: "btn btn-lg btn-primary  col-xs-12 col-md-12 fa fa-facebook", id: "btn-facebook" %></p>
         </div>
 
       </div>

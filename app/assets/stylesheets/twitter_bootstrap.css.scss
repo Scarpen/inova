@@ -5,6 +5,9 @@ body {
 	overflow-x: hidden;
 	/* The html and body elements cannot have any padding or margin. */
 }
+ html {
+ 	padding-top: 60px;
+ }
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -35,29 +38,61 @@ body {
 	}
 }
 // Fim das Configurações do Footer
+#btn{
+	width:100%;
+	height:!important;
+	word-break: break-all;
+}
+#btn p{
+	height:!important;
+	word-break: break-all;
 
-// .icon {
-//     padding-left: 22px;
-//     margin-right: 5px;
-//     background: no-repeat left center;
-//     background-size: 24px 24px;
-//     text-decoration: none;
-// }
- 
-// .icon.twitter {
-//     background-image: url(icon-twit.gif);
-// }
- 
-// .icon.face {
-//     background-image: url(icon-face.gif);
-// }
- 
-// .icon.ln {
-//     background-image: url(icon-ln.gif);
-// }
-// .icon.gplus {
-//     background-image: url(icon-gplus.png);
-// }
+}
+
+#btn-facebook{
+	border:1px solid #0E0295;
+	margin-bottom: 10px;
+ 	width: 100%;
+	background-color:#354BA0;
+	border-radius:50%;
+}
+#btn-facebook:hover{
+	background-color:#2D408C;
+}
+
+#btn-twitter{
+	margin-bottom: 10px;
+	width: 100%;
+	background-color:#48C4FF;
+	border-radius:50%;
+}
+#btn-twitter:hover{
+	background-color:#2DA5FF;
+}
+
+#btn-gplus{
+	margin-bottom: 10px;
+	width: 100%;
+	background-color:#D64136;
+	border-radius:50%;
+}
+#btn-gplus:hover{
+	background-color:#C52F24;
+}
+
+#btn-ln{
+	border-radius:50%;
+	border:1px solid #3277A7;
+	margin-bottom: 10px;
+	width: 100%;
+	background-color:#2784C5;
+}
+#btn-ln:hover{
+	background-color:#2A79B0;
+}
+
+
+
 .alert-success{
 	position:absolute;
 	width: 100%;
@@ -65,91 +100,13 @@ body {
 	text-align: center;
 
 }
-.tt-wrapper{
-	padding: 0;
-	height: 100%;
-	margin-left: 40%;
-}
-.tt-wrapper li{
-	list-style-type:none;
-}
-.tt-wrapper li a{
-    display: block;
-    width: 68px;
-    height: 70px;
-    margin: 0 2px;
-    outline: none;
-    background: transparent url(/assets/icons.png) no-repeat top left;
-    position: relative;
-}
-.tt-wrapper li .tt-gplus{
-    background-position: 0px 0px;
-}
-.tt-wrapper li .tt-twitter{
-    background-position: -68px 0px;
-}
-.tt-wrapper li .tt-dribbble{
-    background-position: -136px 0px;
-}
-.tt-wrapper li .tt-facebook{
-    background-position: -204px 0px;
-}
-.tt-wrapper li .tt-linkedin{
-    background-position: -272px 0px;
-}
-.tt-wrapper li .tt-forrst{
-    background-position: -340px 0px;
-}
-.tt-wrapper li a span{
-	top:5px;
-	width: 150px;
-	height: 60px;
-	padding: 10px;
-	left: 50%;
-	font-family: 'Alegreya SC', Georgia, serif;
-	font-weight: 400;	
-	font-style: italic;
-	font-size: 14px;
-	color: #719DAB;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	border: 5px solid #fff;
-	background: rgba(255,255,255,0.9);
-	text-indent: 0px;
-	position: absolute;
-	pointer-events: none;
-	margin-bottom:26px;
-	margin-left: -75px;
-	opacity: 0;
-	border-radius: 8%;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
-	-webkit-transform: scale(0.2);
-	-moz-transform: scale(0.2);
-	-o-transform: scale(0.2);
-	-ms-transform: scale(0.2);
-	transform: scale(0.2);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-
-}
-.tt-wrapper li a:hover span{
-	opacity: 1;
-	bottom: -8px;
-	-webkit-transform: rotate(0deg) scale(1);
-	-moz-transform: rotate(0deg) scale(1);
-	-o-transform: rotate(0deg) scale(1);
-	-ms-transform: rotate(0deg) scale(1);
-	transform: rotate(0deg) scale(1);
-}
 
 // Less Variables
 	// Inheritance
+
 	$brand-primary: #02B3A1;
-	$body-bg: #EDE9E5;
-	$text-color: #02B3A1;
+	$body-bg: #BDE9E4;
+	$text-color: #5D5D5D;
 	$link-color: #02B3A1;
 	$jumbotron-color: #2F79A1;
 	$jumbotron-bg: #ffffff;
