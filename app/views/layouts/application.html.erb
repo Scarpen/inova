@@ -25,7 +25,7 @@
 	          <h2 class=""><%= image_tag avatar_url(current_user,80) %> <%= current_user.full_name %></h2>
 	          <ul>
 	            <li><a class="" href="#"><span class="glyphicon glyphicon-user"></span> Meu perfil</a></li>
-	            <li><a class="" href="#"><span class="glyphicon glyphicon-star"></span> Minhas ideias</a></li>
+	            <li><%= link_to " Meus Projetos", projects_path, class: "glyphicon glyphicon-star" %></li>
 	            <li><a class="" href="#"><span class="glyphicon glyphicon-cog"></span> Opções</a></li>
 	            <li><%= link_to " Editar Perfil", edit_user_registration_path(current_user), class: "glyphicon glyphicon-pencil" %></li>
                <li id="logout"> <%= link_to " Logout", destroy_user_session_path, method: 'delete',class: "glyphicon glyphicon-remove-sign" %></li>

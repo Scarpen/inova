@@ -10,7 +10,7 @@ body,
 .st-container,
 .st-pusher,
 .st-content {
-	height: 100%;
+	height: !important;
 }
 
 .st-content {
@@ -96,6 +96,7 @@ transform: scale(1.2);
 	width: 300px;
 	height: 100%;
 	background: #02B3A1;
+	overflow-y:auto;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -125,6 +126,7 @@ transform: scale(1.2);
 /* content style */
 
 .st-menu ul {
+	height:290px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
