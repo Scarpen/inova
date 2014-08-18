@@ -225,6 +225,8 @@ pt-BR:
         title: "Título"
         description: "Descrição"
         stage: "Estágio"
+        visibility: Visibilidade
+        url: Site
       stage:
         description: "Descrição"
       protection:
@@ -275,6 +277,9 @@ pt-BR:
       project: Projeto
       protection: Proteção
       stage: Estágio
+      public: Público
+      private: Privado
+
     index:
       list: Listar
       project: Projetos
@@ -283,6 +288,7 @@ pt-BR:
       destroy: Deletar
       title: Título
       description: Descrição
+      visibility: Visibilidade
     edit:
       edit: Editar
       project: Projeto
@@ -294,9 +300,12 @@ pt-BR:
       title: "Título"
       description: "Descrição"
       stage: "Estágio"
+      visibility: "Visibilidade"
       protection: "Proteção"
       show: "Exibir"
       date: "Data"
       full_name: "Nome"
+
+
 
 

@@ -1,6 +1,8 @@
 class Profile < ActiveRecord::Base
 
-	has_and_belongs_to_many :users, join_table: "users_projects_profiles"
-	has_and_belongs_to_many :projects, join_table: "users_projects_profiles"
+	scope :manager, -> { find_by(name: "Manager").id } 
 
+	has_many :users, through: :permissions
+	has_many :projects, through: :permissions
+	has_many :permissions
 end

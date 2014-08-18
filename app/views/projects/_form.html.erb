@@ -26,6 +26,29 @@
 				</div>
 			</div>
 
+
+			<div class="form-group">
+				<div class="col-md-12">
+					<%= f.input :visibility, collection: [[t('.public'),"public"],[t('.private'),"private"]], wrapper: :vertical_radio_and_checkboxes, as: :radio_buttons, :checked => ["public"]%>
+
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-12">
+					<%= f.input :url, as: :url%>
+
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="col-md-12">
+					<%= f.input :feedback, input_html: {rows: 5} %>
+
+				</div>
+			</div>
+			 
+
 		</div>
 	</div>
 </div>

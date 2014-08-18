@@ -8,9 +8,6 @@
 
 <% @projects.each do |p| %>
 	<div class="jumbotron">
-		<p class="<%= p.situation == "Unapproved" ? 'label label-danger' : 'label label-success' %> pull-right">
-			<%= p.situation %>
-		</p>
 		<p>
 			Título: <%= p.title %>
 		</p>

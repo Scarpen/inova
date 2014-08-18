@@ -4,9 +4,7 @@
 
 <div class="panel panel-primary" style="word-break: break-all">
   <div class="panel-heading">
-    <h3 class="panel-title"><%= t '.project' %><span class="<%= @project.situation == "Unavailable" ? 'label label-danger' : 'label label-success' %> pull-right">
-      <%= @project.situation %>
-    </span></h3>
+    <h3 class="panel-title"><%= t '.project' %></h3>
   </div>
   <div class="panel-body">
   
@@ -26,7 +24,11 @@
   </p>
   <p>
     <strong><%= t '.full_name' %>:</strong>
-    <%= @project.user.full_name %>
+    <%= @project.permissions %>
+  </p>    
+  <p>
+    <strong><%= t '.visibility' %>:</strong>
+    <%= @project.visibility %>
   </p>    
 
 
