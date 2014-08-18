@@ -1,59 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><%= content_for?(:title) ? yield(:title) : "InovaTech" %></title>
-	<%= stylesheet_link_tag    "application", media: "all" %>
-	<%= csrf_meta_tags %>
-	<%= stylesheet_link_tag    'application', :media => "all" %>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title><%= content_for?(:title) ? yield(:title) : "InovaTech" %></title>
+		<%= stylesheet_link_tag    "application", media: "all" %>
+		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag    'application', :media => "all" %>
 
-	<!-- For all other devices -->
-	<!-- Size should be 32 x 32 pixels -->
-	<%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-	<%= javascript_include_tag 'application' %>
-</head>
+		<!-- For all other devices -->
+		<!-- Size should be 32 x 32 pixels -->
+		<%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+		<%= javascript_include_tag 'application' %>
+	</head>
 
-	
 	<body>
-		
-
 		<div id="wrap">
 			<div id="st-container" class="st-container">
 				<% if user_signed_in? %>
-	      	<nav class="st-menu st-effect-1" id="menu-1">
-	          <h2 class=""><%= image_tag avatar_url(current_user,80) %> <%= current_user.full_name %></h2>
-	          <ul>
-	            <li><a class="" href="#"><span class="glyphicon glyphicon-user"></span> Meu perfil</a></li>
-	            <li><%= link_to " Meus Projetos", projects_path, class: "glyphicon glyphicon-star" %></li>
-	            <li><a class="" href="#"><span class="glyphicon glyphicon-cog"></span> Opções</a></li>
-	            <li><%= link_to " Editar Perfil", edit_user_registration_path(current_user), class: "glyphicon glyphicon-pencil" %></li>
-               <li id="logout"> <%= link_to " Logout", destroy_user_session_path, method: 'delete',class: "glyphicon glyphicon-remove-sign" %></li>
-	          </ul>
-	      	</nav>
-	      	<div id="st-trigger-effects">
-		      	<a id="st-effect-1">
-				      <div class="st-content"><!-- this is the wrapper for the content -->
-					        <span class="glyphicon glyphicon-user"></span>
-				      </div><!-- /st-content -->
-			      </a>
-		      </div>
+	      	<%= render 'layouts/sidebar'%>
 		    <%end%>
-
 	      <%= render 'layouts/navbar' %>
 				<%= render 'layouts/messages' %>
-			
 				<div class="container">
 					<%= yield %>
-				</div><!-- /st-container -->
-				
+				</div><!-- /st-container -->	
 			</div>
 		</div>
-				<%= render 'layouts/footer' %>
-	
+		<%= render 'layouts/footer' %>
 	</body>
-<script src="/assets/classie.js"></script>
-<script src="/assets/sidebarEffects.js"></script>
-
-
 </html>

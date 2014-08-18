@@ -1,30 +1,35 @@
   <%# this DIV close container of layout  %>
 </div>  
 <header>
-<div class="container">
-  <section class="center">
+    
+  <div class="container">
+    
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 center">
         <a class="logo bg-dark" style="text-decoration: none" href="/">
           <span class="logoicon-plataforma">Plataforma</span>
           <span class="logoicon-inovatech">Inovatech</span>
         </a>
       </div>
     </div>
-    <div>
-    <div class="txtindex">
-      <h1>Comece agora!</h1>
-      <p>A InovaTech está esperando por você</p>
-      <% if user_signed_in? %>
-        <%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
-      <% else %>
-        <%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-primary btn-lg" %>
-        <%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
-      <% end %>
+
+    
+    <div class="txtindex col-md-12">
+      <section class="center">
+        <h1>Comece agora!</h1>
+        <p>A InovaTech está esperando por suas ideias</p>
+        <% if user_signed_in? %>
+          <%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+        <% else %>
+          <%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-primary btn-lg" %>
+          <%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
+        <% end %>
+      </section>
     </div>
-    </section>
+    
+    
+
   </div>
-</div>
 </header>
 
 <section class="center">
@@ -38,7 +43,7 @@
             <span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
             <h2>Acompanhe o desenvolvimento dos seus projetos</h2>
             <p class="lead">Cadastre projetos, sua equipe e gerencie-os</p>
-            <p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg" %></p>
+            <p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
             <hr class="visible-xs visible-sm"/>
           </div>
         </div>
@@ -51,7 +56,7 @@
           <h2>Quero ver uma demonstração</h2>
           <div class="rounded-icons xicon-copy"></div>
           <p class="lead">Veja em mais detalhes e vídeos como o software funciona</p>
-          <p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
+          <p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
           <hr class="visible-xs visible-sm"/>
         </div>
       </div>
@@ -64,7 +69,7 @@
             <h2>Quero acelerar meus resultados agora</h2>
             <div class="rounded-icons xicon-rocket"></div>
             <p class="lead">Use o Inovatech para aumentar a produtividade dos seus projetos</p>
-            <p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg" %></p>
+            <p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
           </div>
         </div>
       </div>
@@ -76,8 +81,39 @@
 
 <section class="social-proof blue light center">
   <div class="container">
-    <h1>Junte-se a <strong>dezenas</strong> de pessoas <strong>que acompanham e <p>recomendam</p></strong></h1><br>
+    <h1>Fique por dentro das <strong>últimas notícias !</strong> </h1><br/>
     <div class="row">
+      <div class="col-md-12">
+
+        <div class="col-md-3">
+          <a id="btn-gplus"class="btn btn-danger btn-lg" href="#">
+            <span class = "fa fa-google-plus"></span>
+            Adicione no Google Plus
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a id="btn-twitter"class="btn btn-info btn-lg" href="#">
+            <span class = "fa fa-twitter"></span>
+            Siga-nos no Twitter
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a id="btn-facebook"class="btn btn-primary btn-lg" href="http://facebook.com/fabsoft">
+            <span class = "fa fa-facebook"></span>
+            Curta-nos no Facebook
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a id="btn-ln"class="btn btn-primary btn-lg" href="#">
+            <span class = "fa fa-linkedin"></span> 
+            Siga-nos no Linkedin
+          </a>
+        </div>
+
+      </div>
       <div class="col-md-4">
         <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffabsoft&amp&amp;width=The+pixel+width+of+the+plugin&amp;height=426&amp;colorscheme=light&amp;
         show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;width=426" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%;
@@ -85,20 +121,11 @@
         <hr class="visible-xs visible-sm"/>        
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-8">
         <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fabsoftcesupa/favorites"  data-widget-id="491093024684793857">Tweets que @fabsoftcesupa curtiu</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
           "://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         <hr class="visible-xs visible-sm"/>
-      </div>
-      <div class="col-md-4">
-        <p class="lead">Conecte-se também e fique atualizado</p>
-        <ul class="tt-wrapper">
-          <li><a class="tt-gplus" href="#"><span>Adicione-nos no Google Plus</span></a></li>
-          <li><a class="tt-twitter" href="#"><span>Siga-nos no Twitter</span></a></li>
-          <li><a class="tt-facebook" href="http://facebook.com/fabsoft"><span>Curta-nos no Facebook</span></a></li>
-          <li><a class="tt-linkedin" href="#"><span>Siga-nos no Linkedin</span></a></li>
-        </ul>
       </div>
     </div>
   </div>
