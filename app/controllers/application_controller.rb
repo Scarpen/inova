@@ -15,6 +15,8 @@ class ApplicationController < ActionController::Base
     params[resource] &&= send(method) if respond_to?(method, true)
   end
 
+  
+
   protected    
   def set_locale
     if params[:locale].blank?

@@ -11,7 +11,7 @@
 		  	<div class="form-inputs">
 			    <div class="form-group">
 			    	<div class="col-md-12">
-		    			<%= f.input :description %>
+		    			<%= f.input :description, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
 
 		    		</div>
 		  		</div>
@@ -39,4 +39,7 @@
     "autoclose": true,
     language: "pt-BR"
   });
+	$('.popover-dismiss').popover({
+  trigger: 'focus'
+	})
 </script>

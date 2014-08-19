@@ -14,10 +14,10 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-8">
-            <%= f.input :full_name, autofocus: true %>
+            <%= f.input :full_name, autofocus: true, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
           <div class="col-md-4">
-            <%= f.input :email %>
+            <%= f.input :email, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
         </div>
       </div>
@@ -25,16 +25,18 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-3">
-            <%= f.input :username %>
+            <%= f.input :username, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+          </div>
+           <%unless f.object.uid.present? %>
+          <div class="col-md-3">
+            <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
           <div class="col-md-3">
-            <%= f.input :password, autocomplete: "off" %>
+            <%= f.input :password_confirmation, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
+          <% end %>
           <div class="col-md-3">
-            <%= f.input :password_confirmation, autocomplete: "off" %>
-          </div>
-          <div class="col-md-3">
-            <%= f.input :naturality %>
+            <%= f.input :naturality, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
         </div>
       </div>
@@ -42,22 +44,22 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-2">
-            <%= f.input :phone, input_html: { id: "phone" } %>
+            <%= f.input :phone, input_html: { id: "phone", 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top"  } %>
           </div>
           <div class="col-md-2">
-            <%= f.input :rg %>
+            <%= f.input :rg, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
           <div class="col-md-2">
-            <%= f.input :cpf, input_html: { id: "cpf" } %>
+            <%= f.input :cpf, input_html: { id: "cpf", 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top"  } %>
           </div>
           <div class="col-md-2">
-            <%= f.input :issuing_agency %>
+            <%= f.input :issuing_agency, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-2">
-            <%= f.input :birth_date, :as => :string, :input_html => { data: {behaviour: "datepicker"}} %>
+            <%= f.input :birth_date, :as => :string, :input_html => { data: {behaviour: "datepicker"}, 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
           <div class="col-md-2">
-            <%= f.input :nationality %>
+            <%= f.input :nationality, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
         </div>
       </div>
@@ -65,13 +67,13 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-8">
-            <%= f.input :residential_address %>
+            <%= f.input :residential_address, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-2">
-            <%= f.input :cep %>
+            <%= f.input :cep, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-2">
-            <%= f.input :city %>
+            <%= f.input :city, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
         </div>
       </div>
@@ -87,16 +89,16 @@
       <div class="form-group">
         <div class="col-md-12">
           <div class="col-md-3">
-            <%= f.input :formation %>
+            <%= f.input :formation, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-3">
-            <%= f.input :course %>
+            <%= f.input :course, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-3">
-            <%= f.input :institution %>
+            <%= f.input :institution, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
           <div class="col-md-3">
-            <%= f.input :job %>
+            <%= f.input :job, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
         </div>
       </div>
