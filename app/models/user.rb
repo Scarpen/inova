@@ -8,11 +8,11 @@ class User < ActiveRecord::Base
 	has_many :projects, through: :permissions
 	belongs_to :role
 
-	# validates :full_name, :username, :phone, :rg,
-	# :issuing_agency, :issuing_date, :cpf, :birth_date,
-	# :nationality, :naturality, :residential_address,
-	# :cep, :city, :formation, :course, :institution,
-	# :job, presence: true
+	validates :full_name, :username, :phone, :rg,
+	:issuing_agency, :issuing_date, :cpf, :birth_date,
+	:nationality, :naturality, :residential_address,
+	:cep, :city, :formation, :course, :institution,
+	:job, presence: true
 
 	before_save :initial_assign
 
@@ -20,51 +20,41 @@ class User < ActiveRecord::Base
 		self.role[:name] == r
 	end
 
-
-
-
-	# Daqui pra baixo -- Login com Omniauth
-	def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
-		user = User.where(:provider => auth.provider, :uid => auth.uid).first
-		if user
-			return user
-		else
-			registered_user = User.where(:email => auth.info.email).first
-			if registered_user
-				return registered_user
-			else
-				user = User.create(full_name:auth.extra.raw_info.name,
-					provider:auth.provider,
-					uid:auth.uid,
-					email:auth.info.email,
-					password:Devise.friendly_token[0,20])
-				user.skip_confirmation!
-				user
-			end
+	
+	def self.from_omniauth(auth)
+		where(auth.slice(:provider, :uid)).first_or_create do |user|
+			user.provider = auth.provider
+			user.uid = auth.uid
+			user.email = auth.info.email 
+     			user.full_name = auth.info.first_name
 		end
 	end
 
-	def self.find_for_twitter_oauth(auth, signed_in_resource=nil)
-		user = User.where(:provider => auth.provider, :uid => auth.uid).first
-		if user
-			return user
-		else
-			registered_user = User.where(:email => auth.uid + "@twitter.com").first
-			if registered_user
-				return registered_user
-			else
-				user = User.create(full_name:auth.info.name,
-					provider:auth.provider,
-					uid:auth.uid,
-					email:auth.uid+"@twitter.com",
-					password:Devise.friendly_token[0,20])
-				user.skip_confirmation!
-				user
+	def self.new_with_session(params, session)
+		if session["devise.user_attributes"]    
+			new(session["devise.user_attributes"], without_protection: true) do |user|
+				user.attributes = params
+				user.valid?
 			end
+		else
+			super
 		end
 	end
 
-private
+	def password_required?
+		super && provider.blank?
+	end
+
+	def update_with_password(params, *options)
+		if encrypted_password.blank?
+			update_attributes(params, *options)
+		else
+			super
+		end
+	end
+
+
+	private
 
 	# Atribui a role de Partaker a todos os usuários que se cadastrarem
 	def initial_assign
