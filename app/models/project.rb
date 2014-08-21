@@ -5,6 +5,7 @@ class Project < ActiveRecord::Base
   validates :title, :url , uniqueness: { case_sensitive: false }
   has_many :permissions
   has_many :users, through: :permissions
+  has_many :profiles, through: :permissions
   has_many :events, dependent: :destroy
   accepts_nested_attributes_for :events, 
     :reject_if => :all_blank, :allow_destroy => true

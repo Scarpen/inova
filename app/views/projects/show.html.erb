@@ -29,7 +29,12 @@
   <p>
     <strong><%= t '.visibility' %>:</strong>
     <%= @project.visibility %>
-  </p>    
+  </p>   
+
+  <p>
+    <strong>Manager:</strong>
+    <%= User.joins([:permissions, :projects, :profiles]).where("permissions.profile_id = profiles.id AND projects.id = permissions.project_id AND permissions.user_id = users.id AND profiles.name = 'Manager' AND projects.id = #{@project.id}").first.email %>
+  </p>   
 
 
   </div>

@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 	:trackable, :validatable, :omniauthable
 	has_many :permissions
 	has_many :projects, through: :permissions
+	has_many :profiles, through: :permissions
 	belongs_to :role
 
 	# validates :full_name, :username, :phone, :rg,

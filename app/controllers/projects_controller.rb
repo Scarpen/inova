@@ -31,12 +31,13 @@ class ProjectsController < ApplicationController
       if @project.save
         format.html { redirect_to @project, notice: 'Project was successfully created.' }
         format.json { render action: 'show', status: :created, location: @project }
+        permission.addgroup(@project, @current_user, Profile.manager)
       else
         format.html { render action: 'new' }
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
-    permission.addgroup(@project, @current_user, Profile.manager)
+    
 
   end
 
