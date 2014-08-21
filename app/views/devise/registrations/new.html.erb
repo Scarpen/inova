@@ -27,7 +27,7 @@
           <div class="col-md-3">
             <%= f.input :username, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
-           <%unless f.object.uid.present? %>
+            <% if f.object.password_required?  %>
           <div class="col-md-3">
             <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>

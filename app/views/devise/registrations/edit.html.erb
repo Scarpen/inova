@@ -109,7 +109,7 @@
   wrapper: :vertical_radio_and_checkboxes,
   include_blank: false %>
 
-<%unless f.object.uid.present? %>
+<% if f.object.encrypted_password.present? %>
   <%= f.input :current_password %>
 <% end %>
 
