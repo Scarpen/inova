@@ -47,6 +47,7 @@ gem 'font-awesome-sass'
 gem 'cocoon'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
 
 group :production do
   gem 'pg', '0.15.1'

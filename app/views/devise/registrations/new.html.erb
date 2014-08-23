@@ -27,13 +27,13 @@
           <div class="col-md-3">
             <%= f.input :username, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
-            <% if f.object.password_required?  %>
-          <div class="col-md-3">
-            <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-          </div>
-          <div class="col-md-3">
-            <%= f.input :password_confirmation, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-          </div>
+          <% if f.object.password_required? %>
+            <div class="col-md-3">
+              <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+            </div>
+            <div class="col-md-3">
+              <%= f.input :password_confirmation, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+            </div>
           <% end %>
           <div class="col-md-3">
             <%= f.input :naturality, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
