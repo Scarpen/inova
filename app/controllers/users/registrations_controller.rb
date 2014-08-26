@@ -2,6 +2,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   
   skip_before_filter :verify_authenticity_token, :only => [:ipn_notification]
   before_filter :configure_permitted_parameters
+  
+
 
   
   protected

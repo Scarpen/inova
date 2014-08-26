@@ -23,7 +23,11 @@
       <ul class="nav navbar-nav navbar-right">
         <% unless user_signed_in? %>
           <li class="<%= 'active' if params[:controller] == 'devise/sessions' %>"><%= link_to t('links.login'), "#myModal", data: {toggle: "modal"} %></li>
-          <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>"><%= link_to t('links.register'), new_user_registration_path %></li>
+          <li class="<%= 'active' if params[:controller] == 'devise/registrations' %>">
+          <%= link_to t('links.register'), new_user_registration_path %>
+
+
+          </li>
         <% end %>
       </ul>
 

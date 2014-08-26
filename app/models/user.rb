@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-
 	include Social
 
 	devise  :database_authenticatable, :registerable, :confirmable,
@@ -20,6 +19,7 @@ class User < ActiveRecord::Base
 	def role?(r)
 		self.role[:name] == r
 	end
+
 
 	
 	def self.from_omniauth(auth)
