@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-	include Social
 
 	devise  :database_authenticatable, :registerable, :confirmable,
 	:trackable, :validatable, :omniauthable
@@ -23,36 +22,38 @@ class User < ActiveRecord::Base
 
 	
 	def self.from_omniauth(auth)
-		where(auth.slice(:provider, :uid)).first_or_create do |user|
-			user.provider = auth.provider
-			user.uid = auth.uid
-			user.email = auth.info.email 
-     			user.full_name = auth.info.first_name
-		end
-	end
+    where(auth.slice(:provider, :uid)).first_or_create do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      unless auth.provider == 'twitter'
+        user.email = auth.info.email 
+        user.skip_confirmation!
+      end
+    end
+  end
 
-	def self.new_with_session(params, session)
-		if session["devise.user_attributes"]    
-			new(session["devise.user_attributes"], without_protection: true) do |user|
-				user.attributes = params
-				user.valid?
-			end
-		else
-			super
-		end
-	end
+  def self.new_with_session(params, session)
+    if session["devise.user_attributes"]
+      new(session["devise.user_attributes"], without_protection: true) do |user|
+        user.attributes = params
+        user.valid?
+      end
+    else
+      super
+    end
+  end
 
-	def password_required?
-		super && provider.blank?
-	end
+  def password_required?
+    super && provider.blank?
+  end
 
-	def update_with_password(params, *options)
-		if encrypted_password.blank?
-			update_attributes(params, *options)
-		else
-			super
-		end
-	end
+  def update_with_password(params, *options)
+    if encrypted_password.blank?
+      update_attributes(params, *options)
+    else
+      super
+    end
+  end
 
 
 	private

@@ -33,8 +33,20 @@ s3 = Stage.new
 s3.description = "Um produto e/ou serviço que já atende o mercado consumidor precisando de melhoria"
 s3.save
 
+
+# validates :full_name, :username, :phone, :rg,
+# 	:issuing_agency, :issuing_date, :cpf, :birth_date,
+# 	:nationality, :naturality, :residential_address,
+# 	:cep, :city, :formation, :course, :institution,
+# 	:job, presence: true
+
 adm = User.create!(email: "administrador@fabsoft.com", password: "123123", 
-	password_confirmation: "123123", full_name: "Administrador", username: "Administrador")
+	password_confirmation: "123123", full_name: "Administrador", username: "Administrador",
+	phone: "9312331", rg: "38471837", issuing_date: Time.now, cpf: "19028390123",
+	birth_date: Time.now, nationality: "Brasil", naturality: "Brasil",
+	residential_address: "sakdjllskdja", cep: "24782734", city: "Belem", formation: "alksjda",
+	course: "çaskjdasd", institution: "Cesupa", job: "ADM", issuing_agency: "SSP-PA"
+	)
 adm.role = r1
 adm.confirm!
 adm.save

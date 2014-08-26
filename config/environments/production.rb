@@ -95,4 +95,12 @@ PlataformaInovatech::Application.configure do
     password: "ymKRkVcCRNH7CCYIRsC-Jg"
   }
 
+  # Environment variables
+  ENV["TWITTER_CONSUMER_KEY"] = "BIQtFknzKvizr68lw30EnkrhQ"
+  ENV["TWITTER_CONSUMER_SECRET"] = "RhuWj4Y7SdMVAhnTRCB1uFlHE63hUTiaWH7KxmQx3eJM2RABTV"
+  ENV["FACEBOOK_APP_ID"] = "799390066759975"
+  ENV["FACEBOOK_APP_SECRET"] = "bb37f824345f1c632a6d39d61ff8ed2d"
+  ENV["LINKEDIN_APP_ID"] = "77iv7up24o3gou"
+  ENV["LINKEDIN_APP_SECRET"] = "vVtV71ENs7ARvrBF" 
+
 end
