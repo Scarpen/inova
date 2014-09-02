@@ -7,20 +7,12 @@ class User < ActiveRecord::Base
 	has_many :profiles, through: :permissions
 	belongs_to :role
 
-	validates :full_name, :username, :phone, :rg,
-	:issuing_agency, :issuing_date, :cpf, :birth_date,
-	:nationality, :naturality, :residential_address,
-	:cep, :city, :formation, :course, :institution,
-	:job, presence: true
-
-	before_save :initial_assign
+	before_create :initial_assign
 
 	def role?(r)
 		self.role[:name] == r
 	end
 
-
-	
 	def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
@@ -52,6 +44,14 @@ class User < ActiveRecord::Base
       update_attributes(params, *options)
     else
       super
+    end
+  end
+
+  def first_name
+    if provider.blank?
+      first_name = self.full_name.split.first 
+    else
+      self.email
     end
   end
 

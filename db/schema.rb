@@ -76,7 +76,6 @@ ActiveRecord::Schema.define(version: 20140818122147) do
     t.string   "email",                             default: "", null: false
     t.string   "encrypted_password",                default: "", null: false
     t.string   "full_name",              limit: 80
-    t.string   "username"
     t.string   "phone"
     t.string   "rg",                     limit: 20
     t.string   "issuing_agency"

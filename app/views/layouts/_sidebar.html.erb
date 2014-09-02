@@ -1,5 +1,5 @@
 <nav class="st-menu st-effect-1" id="menu-1">
-	<h2 class=""><%= image_tag avatar_url(current_user,80) %> <%= current_user.full_name %></h2>
+	<h2 class=""><%= image_tag avatar_url(current_user,80) %> <%= current_user.first_name %></h2>
 	<ul>
   	<li><a class="" href="#"><span class="glyphicon glyphicon-user"></span> Meu perfil</a></li>
 	  <li><%= link_to " Meus Projetos", projects_path, class: "glyphicon glyphicon-star" %></li>
