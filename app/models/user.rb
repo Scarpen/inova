@@ -47,6 +47,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def first_name
+    first_name = self.full_name.split.first
+  end
+
 
 	private
 
