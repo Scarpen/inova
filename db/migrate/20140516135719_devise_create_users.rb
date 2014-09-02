@@ -7,7 +7,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       #Author      
       t.string :full_name, limit: 80
-      t.string :username
       t.string :phone
       t.string :rg, limit: 20
       t.string :issuing_agency

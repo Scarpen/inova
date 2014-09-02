@@ -24,9 +24,6 @@
 
       <div class="form-group">
         <div class="col-md-12">
-          <div class="col-md-3">
-            <%= f.input :username, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-          </div>             
           <%unless f.object.uid.present? %>
           <div class="col-md-3">
             <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
@@ -106,21 +103,21 @@
   </div>
 </div>
 <%= f.input :newsletter , as: :radio_buttons, 
-  wrapper: :vertical_radio_and_checkboxes,
-  include_blank: false %>
+wrapper: :vertical_radio_and_checkboxes,
+include_blank: false %>
 
 <% if f.object.encrypted_password.present? %>
-  <%= f.input :current_password %>
+<%= f.input :current_password %>
 <% end %>
 
 <div class="btnsignup">
-<%= f.submit t("links.update"), class: "btn btn-primary", style: "margin: 15px;" %>
-<%= render "devise/shared/links" %>
+  <%= f.submit t("links.update"), class: "btn btn-primary", style: "margin: 15px;" %>
+  <%= render "devise/shared/links" %>
 </div>
 <% end %>
 
 <center>
-<p><%= button_to "Cancelar Minha Conta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-lg btn-danger" %></p>
+  <p><%= button_to "Cancelar Minha Conta", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-lg btn-danger" %></p>
 </center>
 </br>
 </br>

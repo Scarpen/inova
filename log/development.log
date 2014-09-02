@@ -1194,3 +1194,2891 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-26 11:42:34
 
 
 Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-08-26 11:42:34 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:36:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (71.0ms)
+  Rendered layouts/_modal_login.html.erb (108.3ms)
+  Rendered layouts/_navbar.html.erb (110.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 3192ms (Views: 3190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2014-09-01 21:36:41 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/daniel/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/daniel/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/daniel/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/daniel/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/daniel/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/daniel/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.5ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-09-01 21:36:42 -0300
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.1.0" for 127.0.0.1 at 2014-09-01 21:36:42 -0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-01 21:36:43 -0300
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (143.2ms)
+  Rendered layouts/_modal_login.html.erb (5.4ms)
+  Rendered layouts/_navbar.html.erb (7.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 210ms (Views: 201.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:36:44 -0300
+  [1m[36m (106.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (221.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20140516135719)
+  [1m[35m (74.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `full_name` varchar(80), `phone` varchar(255), `rg` varchar(20), `issuing_agency` varchar(255), `issuing_date` date, `cpf` varchar(20), `birth_date` date, `nationality` varchar(20), `naturality` varchar(20), `residential_address` varchar(50), `cep` varchar(8), `city` varchar(20), `formation` varchar(20), `course` varchar(20), `institution` varchar(20), `job` varchar(20), `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `failed_attempts` int(11) DEFAULT 5 NOT NULL, `unlock_token` varchar(255), `locked_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (144.2ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (532.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (155.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_confirmation_token` ON `users` (`confirmation_token`) [0m
+  [1m[35m (201.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_unlock_token` ON `users` (`unlock_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140516135719')
+  [1m[36m (37.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRoles (20140608212750)
+  [1m[35m (108.7ms)[0m  CREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140608212750')
+  [1m[36m (42.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateStages (20140620170653)
+  [1m[35m (88.1ms)[0m  CREATE TABLE `stages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140620170653')
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProtections (20140620171006)
+  [1m[35m (119.3ms)[0m  CREATE TABLE `protections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140620171006')
+  [1m[36m (42.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEvents (20140620171853)
+  [1m[35m (88.3ms)[0m  CREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `date` date, `project_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (188.9ms)[0m  [1mCREATE INDEX `index_events_on_project_id` ON `events` (`project_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140620171853')[0m
+  [1m[35m (31.9ms)[0m  COMMIT
+Migrating to CreateProjects (20140620172918)
+  [1m[36m (83.0ms)[0m  [1mCREATE TABLE `projects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `stage_id` int(11), `protection_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (166.8ms)[0m  CREATE INDEX `index_projects_on_stage_id` ON `projects` (`stage_id`) 
+  [1m[36m (155.5ms)[0m  [1mCREATE INDEX `index_projects_on_protection_id` ON `projects` (`protection_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140620172918')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+Migrating to AddColumnRoleIdToUsers (20140807183223)
+  [1m[36m (222.1ms)[0m  [1mALTER TABLE `users` ADD `role_id` int(11)[0m
+  [1m[35m (155.8ms)[0m  CREATE INDEX `index_users_on_role_id` ON `users` (`role_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140807183223')
+  [1m[36m (44.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProfiles (20140807183857)
+  [1m[35m (88.1ms)[0m  CREATE TABLE `profiles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140807183857')
+  [1m[36m (53.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnUrlVisibilityAndFeedbackToProjects (20140808123311)
+  [1m[35m (233.8ms)[0m  ALTER TABLE `projects` ADD `url` varchar(255)
+  [1m[36m (267.3ms)[0m  [1mALTER TABLE `projects` ADD `visibility` varchar(255)[0m
+  [1m[35m (200.0ms)[0m  ALTER TABLE `projects` ADD `feedback` text
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140808123311')
+  [1m[36m (43.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnNewsletterToUsers (20140812134104)
+  [1m[35m (215.7ms)[0m  ALTER TABLE `users` ADD `newsletter` varchar(255)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140812134104')
+  [1m[36m (42.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnsToUsers (20140813234022)
+  [1m[35m (244.4ms)[0m  ALTER TABLE `users` ADD `provider` varchar(255)
+  [1m[36m (234.1ms)[0m  [1mALTER TABLE `users` ADD `uid` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140813234022')[0m
+  [1m[35m (43.4ms)[0m  COMMIT
+Migrating to CreatePermissions (20140818122147)
+  [1m[36m (99.0ms)[0m  [1mCREATE TABLE `permissions` (`user_id` int(11), `project_id` int(11), `profile_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (178.0ms)[0m  CREATE INDEX `index_permissions_on_user_id` ON `permissions` (`user_id`) 
+  [1m[36m (179.7ms)[0m  [1mCREATE INDEX `index_permissions_on_project_id` ON `permissions` (`project_id`) [0m
+  [1m[35m (199.7ms)[0m  CREATE INDEX `index_permissions_on_profile_id` ON `permissions` (`profile_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140818122147')
+  [1m[36m (32.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:41', 'Admin', '2014-09-02 00:39:41')[0m
+  [1m[35m (37.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Partaker', '2014-09-02 00:39:42')
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Visitor', '2014-09-02 00:39:42')[0m
+  [1m[35m (41.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Manager', '2014-09-02 00:39:42')
+  [1m[36m (48.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Collaborator', '2014-09-02 00:39:42')[0m
+  [1m[35m (42.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Evaluator', '2014-09-02 00:39:42')
+  [1m[36m (42.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Uma idéia já descrita com detalhamento das etapas do processo de desenvolvimento', '2014-09-02 00:39:42')[0m
+  [1m[35m (47.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Um processo em fase de desenvolvimento, ainda não testado', '2014-09-02 00:39:42')
+  [1m[36m (42.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Um processo já desenvolvido com protótipo testado e avaliado', '2014-09-02 00:39:42')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:39:42', 'Um produto e/ou serviço que já atende o mercado consumidor precisando de melhoria', '2014-09-02 00:39:42')
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:01', 'Admin', '2014-09-02 00:40:01')[0m
+  [1m[35m (43.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:01', 'Partaker', '2014-09-02 00:40:01')
+  [1m[36m (42.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `roles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:01', 'Visitor', '2014-09-02 00:40:01')[0m
+  [1m[35m (42.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:01', 'Manager', '2014-09-02 00:40:01')
+  [1m[36m (44.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:01', 'Collaborator', '2014-09-02 00:40:01')[0m
+  [1m[35m (42.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `profiles` (`created_at`, `name`, `updated_at`) VALUES ('2014-09-02 00:40:02', 'Evaluator', '2014-09-02 00:40:02')
+  [1m[36m (42.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:40:02', 'Uma idéia já descrita com detalhamento das etapas do processo de desenvolvimento', '2014-09-02 00:40:02')[0m
+  [1m[35m (46.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:40:02', 'Um processo em fase de desenvolvimento, ainda não testado', '2014-09-02 00:40:02')
+  [1m[36m (42.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:40:02', 'Um processo já desenvolvido com protótipo testado e avaliado', '2014-09-02 00:40:02')[0m
+  [1m[35m (42.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `stages` (`created_at`, `description`, `updated_at`) VALUES ('2014-09-02 00:40:02', 'Um produto e/ou serviço que já atende o mercado consumidor precisando de melhoria', '2014-09-02 00:40:02')
+  [1m[36m (42.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'administrador@fabsoft.com' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = '3e23284478440316b4c94d782f376fcab325e469f9f4e6747094f58a530e201c' ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT `roles`.* FROM `roles` WHERE `roles`.`name` = 'Partaker' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`birth_date`, `cep`, `city`, `confirmation_sent_at`, `confirmation_token`, `course`, `cpf`, `created_at`, `email`, `encrypted_password`, `formation`, `full_name`, `institution`, `issuing_agency`, `issuing_date`, `job`, `nationality`, `naturality`, `phone`, `residential_address`, `rg`, `role_id`, `updated_at`) VALUES ('2014-09-01', '24782734', 'Belem', '2014-09-02 00:40:02', '3e23284478440316b4c94d782f376fcab325e469f9f4e6747094f58a530e201c', 'çaskjdasd', '19028390123', '2014-09-02 00:40:02', 'administrador@fabsoft.com', '$2a$10$x/AaUaT32/HAz754UmCE3uV.cgOfnKvjaIYRF1HTuXD89N7SWwSH6', 'alksjda', 'Administrador', 'Cesupa', 'SSP-PA', '2014-09-01', 'ADM', 'Brasil', 'Brasil', '9312331', 'sakdjllskdja', '38471837', 2, '2014-09-02 00:40:02')
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.6ms)
+
+Sent mail to administrador@fabsoft.com (119.3ms)
+Date: Mon, 01 Sep 2014 21:40:02 -0300
+From: Inovatech <no-reply@inovatechfs.com>
+Reply-To: Inovatech <no-reply@inovatechfs.com>
+To: administrador@fabsoft.com
+Message-ID: <540511e2d0e84_12c48a1330544d@Inspiron-15r.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome administrador@fabsoft.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=zpZLV5oV4HHXvQCMidAe">Confirm my account</a></p>
+
+  [1m[36m (48.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `role_id` = 4, `confirmation_token` = NULL, `confirmed_at` = '2014-09-02 00:40:03', `updated_at` = '2014-09-02 00:40:03' WHERE `users`.`id` = 1[0m
+  [1m[35m (60.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:40:06 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_modal_login.html.erb (27.2ms)
+  Rendered layouts/_navbar.html.erb (28.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 381ms (Views: 380.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:06 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:07 -0300
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_modal_login.html.erb (15.1ms)
+  Rendered layouts/_navbar.html.erb (17.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 135.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:09 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:40:10 -0300
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-01 21:41:03 -0300
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mGBywL3is9PLQ8Ymfc3QtlD/Tflp+4w+8xfZDr+ZDec=", "user"=>{"full_name"=>"Daniel Leal", "email"=>"danielleal94@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "naturality"=>"brasil", "phone"=>"(12) 3123-1231", "rg"=>"123123123", "cpf"=>"123.123.123-12", "issuing_agency"=>"sspa-pa", "birth_date"=>"12-09-2014", "nationality"=>"brasil", "residential_address"=>"Avenida Conselheiro Furtado, 2312...", "cep"=>"66040100", "city"=>"belém", "formation"=>"asfsafdsdf", "course"=>"sadfsadfsadf", "institution"=>"asfasfsadf", "job"=>"asdfsafsafd", "newsletter"=>"true"}, "commit"=>"Inscrever-se"}
+Unpermitted parameters: phone, job, newsletter
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'danielleal94@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = '8ba0b0d396ae00c6c5a45c5242a2bc2b738854888e6bb24b959c25c51078ec1c' ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT `roles`.* FROM `roles` WHERE `roles`.`name` = 'Partaker' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`birth_date`, `cep`, `city`, `confirmation_sent_at`, `confirmation_token`, `course`, `cpf`, `created_at`, `email`, `encrypted_password`, `formation`, `full_name`, `institution`, `issuing_agency`, `nationality`, `naturality`, `residential_address`, `rg`, `role_id`, `updated_at`) VALUES ('2014-09-12', '66040100', 'belém', '2014-09-02 00:41:03', '8ba0b0d396ae00c6c5a45c5242a2bc2b738854888e6bb24b959c25c51078ec1c', 'sadfsadfsadf', '123.123.123-12', '2014-09-02 00:41:03', 'danielleal94@gmail.com', '$2a$10$XPNQ0Wrignj9eyAWfnkCZewmIbGrdGmZvDd8M2YyuhO0GaqZktpXW', 'asfsafdsdf', 'Daniel Leal', 'asfasfsadf', 'sspa-pa', 'brasil', 'brasil', 'Avenida Conselheiro Furtado, 2312...', '123123123', 2, '2014-09-02 00:41:03')
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+
+Sent mail to danielleal94@gmail.com (64.1ms)
+Date: Mon, 01 Sep 2014 21:41:03 -0300
+From: Inovatech <no-reply@inovatechfs.com>
+Reply-To: Inovatech <no-reply@inovatechfs.com>
+To: danielleal94@gmail.com
+Message-ID: <5405121fcf2af_12ce2774154112fa@Inspiron-15r.mail>
+Subject: =?UTF-8?Q?Instru=C3=A7=C3=B5es_de_confirma=C3=A7=C3=A3o?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome danielleal94@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=URp78bn6FVrbhEMrprMx">Confirm my account</a></p>
+
+  [1m[36m (38.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 553ms (ActiveRecord: 41.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+Processing by WelcomeController#home as HTML
+  Rendered welcome/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_modal_login.html.erb (5.3ms)
+  Rendered layouts/_navbar.html.erb (6.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:04 -0300
+
+
+Started GET "/users/confirmation?confirmation_token=URp78bn6FVrbhEMrprMx" for 127.0.0.1 at 2014-09-01 21:41:13 -0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"URp78bn6FVrbhEMrprMx"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`confirmation_token` = '8ba0b0d396ae00c6c5a45c5242a2bc2b738854888e6bb24b959c25c51078ec1c' ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE `users` SET `confirmation_token` = NULL, `confirmed_at` = '2014-09-02 00:41:13', `updated_at` = '2014-09-02 00:41:13' WHERE `users`.`id` = 2
+  [1m[36m (80.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 99ms (ActiveRecord: 82.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-09-01 21:41:13 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_modal_login.html.erb (5.8ms)
+  Rendered layouts/_navbar.html.erb (7.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:14 -0300
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-09-01 21:41:20 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mGBywL3is9PLQ8Ymfc3QtlD/Tflp+4w+8xfZDr+ZDec=", "user"=>{"email"=>"danielleal94@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'danielleal94@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2014-09-02 00:41:20', `current_sign_in_at` = '2014-09-02 00:41:20', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2014-09-02 00:41:20' WHERE `users`.`id` = 2
+  [1m[36m (112.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 195ms (ActiveRecord: 112.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:41:20 -0300
+Processing by WelcomeController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered welcome/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_modal_login.html.erb (5.7ms)
+  Rendered layouts/_navbar.html.erb (6.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/classie.js" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/assets/sidebarEffects.js" for 127.0.0.1 at 2014-09-01 21:41:21 -0300
+
+
+Started GET "/projects" for 127.0.0.1 at 2014-09-01 21:41:32 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mProject Load (0.6ms)[0m  SELECT `projects`.* FROM `projects` INNER JOIN `permissions` ON `projects`.`id` = `permissions`.`project_id` WHERE `permissions`.`user_id` = 2 LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `projects` INNER JOIN `permissions` ON `projects`.`id` = `permissions`.`project_id` WHERE `permissions`.`user_id` = 2[0m
+  Rendered projects/index.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_modal_login.html.erb (5.7ms)
+  Rendered layouts/_navbar.html.erb (6.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 86.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:33 -0300
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+Processing by Users::RegistrationsController#edit as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/shared/_links.erb (2.1ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+  Rendered layouts/_modal_login.html.erb (6.1ms)
+  Rendered layouts/_navbar.html.erb (9.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:37 -0300
+
+
+Started PUT "/users" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+Processing by Users::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SqG0gv7pH+qCMEkhtMsFLvChzDMwh2wQtYYQC8XG+Go=", "user"=>{"full_name"=>"Daniel Leal", "email"=>"danielleal94@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "naturality"=>"brasil", "phone"=>"(12) 3123-1231", "rg"=>"123123123", "cpf"=>"123.123.123-12", "issuing_agency"=>"sspa-pa", "birth_date"=>"2014-09-12", "nationality"=>"brasil", "residential_address"=>"Avenida Conselheiro Furtado, 2312...", "cep"=>"66040100", "city"=>"belém", "formation"=>"asfsafdsdf", "course"=>"sadfsadfsadf", "institution"=>"asfasfsadf", "job"=>"sfasdfasdf", "newsletter"=>"true", "current_password"=>"[FILTERED]"}, "commit"=>"Atualizar"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+Unpermitted parameters: phone, job, newsletter
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+Processing by WelcomeController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered welcome/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_modal_login.html.erb (5.3ms)
+  Rendered layouts/_navbar.html.erb (6.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:58 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:59 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:59 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:41:59 -0300
+
+
+Started GET "/users/edit.2" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+Processing by Users::RegistrationsController#edit as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (47.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_modal_login.html.erb (4.7ms)
+  Rendered layouts/_navbar.html.erb (6.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 110ms (Views: 107.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/menu_Index.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/permission.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/permissions.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/twitter_bootstrap.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker3.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/classie.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/permission.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/permissions.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/sidebarEffects.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/jquery.maskedinput.min.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:05 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:06 -0300
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:06 -0300
+
+
+Started GET "/assets/cocoon.js?body=1" for 127.0.0.1 at 2014-09-01 21:42:06 -0300

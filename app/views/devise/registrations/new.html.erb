@@ -23,25 +23,18 @@
       </div>
 
       <div class="form-group">
+        <% unless f.object.uid.present?  %>
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+          </div>
+          <div class="col-md-6">
+            <%= f.input :password_confirmation, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+          </div>
+        </div>
+        <% end %>
+        
         <div class="col-md-3">
-          <div class="col-md-12">
-            <%= f.input :username, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-          </div>
-          </div>
-
-          
-          <% unless f.object.uid.present?  %>
-            <div class="col-md-6">
-              <div class="col-md-6">
-                <%= f.input :password, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-              </div>
-              <div class="col-md-6">
-                <%= f.input :password_confirmation, autocomplete: "off", :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-              </div>
-            </div>
-          <% end %>
-          
-          <div class="col-md-3">
           <div class="col-md-12">
             <%= f.input :naturality, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
@@ -56,16 +49,16 @@
           <div class="col-md-6">
             <%= f.input :rg, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
-          </div>
-          <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
           <div class="col-md-6">
             <%= f.input :cpf, input_html: { id: "cpf", 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top"  } %>
           </div>
           <div class="col-md-6">
             <%= f.input :issuing_agency, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }  %>
           </div>
-          </div>
-          <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
           <div class="col-md-6">
             <%= f.input :birth_date, :as => :string, :input_html => { data: {behaviour: "datepicker"}, 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
           </div>
@@ -123,9 +116,9 @@ include_blank: false %>
 
 <div class="btnsignup">
   <%= f.submit t("links.sign_up"), class: "btn btn-primary", style: "margin: 15px;" %>
-    <% if f.object.uid.present?  %>
-    <%= link_to "Cancelar", destroy_user_session_path, method: 'delete' %>
-    <% end %>
+  <% if f.object.uid.present?  %>
+  <%= link_to "Cancelar", destroy_user_session_path, method: 'delete' %>
+  <% end %>
   <%= render "devise/shared/links" %>
 </div>
 <% end %>

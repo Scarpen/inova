@@ -41,7 +41,7 @@ s3.save
 # 	:job, presence: true
 
 adm = User.create!(email: "administrador@fabsoft.com", password: "123123", 
-	password_confirmation: "123123", full_name: "Administrador", username: "Administrador",
+	password_confirmation: "123123", full_name: "Administrador",
 	phone: "9312331", rg: "38471837", issuing_date: Time.now, cpf: "19028390123",
 	birth_date: Time.now, nationality: "Brasil", naturality: "Brasil",
 	residential_address: "sakdjllskdja", cep: "24782734", city: "Belem", formation: "alksjda",
