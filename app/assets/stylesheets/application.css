@@ -35,7 +35,7 @@
 
 .logo.bg-dark span.logoicon-plataforma {
     font-family: 'Pacifico', cursive;
-    color: #A6F8F0;
+    color: #fff;
 }
 
 .logo span {
@@ -44,7 +44,7 @@
 
 .logo.bg-dark span.logoicon-inovatech {
     font-family: 'Pacifico', cursive;
-    color: #CDFFFA;
+    color: #CBCAFF;
 }
 
 .navbar-default .navbar-brand {
@@ -64,11 +64,11 @@ header {
     width: auto;
     overflow: visible;
     padding: 30px 0px;
-    background-color: #02B3A1;
+    background-color: #17345E;
 }
 
 section.blue.light {
-    background-color: #DAF2EF;
+    background-color: #CBCAFF;
     margin-bottom: 40px;
 }
 section.blue {

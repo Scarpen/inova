@@ -6,7 +6,7 @@ body {
 	/* The html and body elements cannot have any padding or margin. */
 }
  html {
- 	padding-top: 60px;
+ 	padding-top: 40px;
  }
 
 /* Wrapper for page content to push down footer */
@@ -25,7 +25,7 @@ body {
 	height: !important;
 }
 #footer {
-	background-color:  #02B3A1;
+	background-color:  #17345E;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
@@ -52,7 +52,6 @@ body {
 #btn-facebook{
 	border:1px solid #0E0295;
 	margin-bottom: 10px;
- 	width: 100%;
 	background-color:#354BA0;
 	border-radius:50%;
 }
@@ -62,7 +61,6 @@ body {
 
 #btn-twitter{
 	margin-bottom: 10px;
-	width: 100%;
 	background-color:#48C4FF;
 	border-radius:50%;
 }
@@ -72,7 +70,6 @@ body {
 
 #btn-gplus{
 	margin-bottom: 10px;
-	width: 100%;
 	background-color:#D64136;
 	border-radius:50%;
 }
@@ -84,7 +81,6 @@ body {
 	border-radius:50%;
 	border:1px solid #3277A7;
 	margin-bottom: 10px;
-	width: 100%;
 	background-color:#2784C5;
 }
 #btn-ln:hover{
@@ -104,14 +100,14 @@ body {
 // Less Variables
 	// Inheritance
 
-	$brand-primary: #02B3A1;
-	$body-bg: #BDE9E4;
+	$brand-primary: #17345E;
+	$body-bg: transparent;
 	$text-color: #5D5D5D;
-	$link-color: #02B3A1;
-	$jumbotron-color: #2F79A1;
+	$link-color: #17345E;
+	$jumbotron-color: #17345E;
 	$jumbotron-bg: #ffffff;
 
-	$input-border-focus: #02B3A1;
+	$input-border-focus: #17345E;
 	
 
 
@@ -119,10 +115,10 @@ body {
  	$font-family-sans-serif: 'Roboto Slab', serif;
 
 	// navbar
-	$navbar-default-bg: #ffffff;
-	$navbar-default-link-color: #02B3A1;
+	$navbar-default-bg: rgba(255,255,255,0.5);
+	$navbar-default-link-color: #17345E;
 	$navbar-default-border: #406F95;
-	$navbar-height: 60px;
+	$navbar-height: 40px;
 
 
 // Fonts Importadas
