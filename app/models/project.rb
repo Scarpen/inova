@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
   
-  validates :url, format: { with: URI.regexp } if :url.empty?
+  validates :url, format: { with: URI.regexp, allow_blank: true,
+    message: "Url inválida" }
   validates :title, :description, presence: true
   validates :title, :description, length: { minimum: 4 }
   validates :title, :url , uniqueness: { case_sensitive: false }

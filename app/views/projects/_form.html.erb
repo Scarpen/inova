@@ -9,13 +9,13 @@
 
 				<div class="form-group">
 					<div class="col-md-12">
-						<%= f.input :title, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" }%>
+						<%= f.input :title %>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="col-md-12">
-						<%= f.input :description, input_html: {rows: 5, 'data-content'=> "Breve descrição da idéia, protótipo ou produto que pretende registrar, especificando o diferencial de inovação agregado ao produto e/ou serviço:", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
+						<%= f.input :description, input_html: {rows: 5, placeholder: "Breve descrição da idéia, protótipo ou produto que pretende registrar, especificando o diferencial de inovação agregado ao produto e/ou serviço:" } %>
 					</div>
 				</div>
 
@@ -26,25 +26,22 @@
 					</div>
 				</div>
 
-
 			<div class="form-group">
 				<div class="col-md-12">
 					<%= f.input :visibility, collection: [[t('.public'),"public"],[t('.private'),"private"]], wrapper: :vertical_radio_and_checkboxes, as: :radio_buttons, :checked => ["public"]%>
-
 				</div>
 			</div>
 
 			<div class="form-group">
 				<div class="col-md-12">
-					<%= f.input :url, as: :url, :input_html => {'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-
+					<%= f.input :url, placeholder: "http://www.example.com" %>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<div class="col-md-12">
-					<%= f.input :feedback, input_html: {rows: 5, 'data-content'=> "Popover content", :class => "popover-dismiss", "data-toggle" => "popover", "data-placement" => "top" } %>
-
+					<%= f.input :feedback, input_html: { rows: 5, 
+						placeholder: "Indique quais resultados você espera do InovaTech" } %>
 				</div>
 			</div>
 			 
@@ -86,9 +83,3 @@
 	</div>
 
 <% end %>
-
-<script>
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-})
-</script>

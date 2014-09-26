@@ -7,7 +7,6 @@
 		<div class="row">
 			<div class="col-md-12 center">
 				<a class="logo bg-dark" style="text-decoration: none" href="/">
-					<span class="logoicon-plataforma">Plataforma</span>
 					<span class="logoicon-inovatech">Inovatech</span>
 				</a>
 			</div>
@@ -16,8 +15,8 @@
 
 		<div class="txtindex col-md-12">
 			<section class="center">
-				<h1>Comece agora!</h1>
-				<p>A InovaTech está esperando por suas ideias</p>
+				<h1>Transformar ideias inovadoras em negócios de alto impacto!</h1>
+				<p>Para pessoas inovadoras, empreendedoras e colaborativas que buscam um espaço para trocar ideias e experiências. O InovaTech é uma plataforma que permite que você registre suas Ideias, busque parceiros para transforma-las em negócios, mentores para conduzi-los pelos melhores caminhos e investidores para coloca-las em prática.</p>
 				<% if user_signed_in? %>
 				<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
 				<% else %>
@@ -42,9 +41,7 @@
 					<div class="panel-body">
 						<span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
 						<h2>Acompanhe o desenvolvimento dos seus projetos</h2>
-						<p class="lead">Cadastre projetos, sua equipe e gerencie-os</p>
-						<p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
-						<hr class="visible-xs visible-sm"/>
+						<p class="lead">Você acredita na sua ideia e está precisando de uma ajuda para colocá-la em prática?</p>
 					</div>
 				</div>
 			</div>
@@ -53,11 +50,9 @@
 				<div class="panel panel-default" style="overflow:hidden">
 					<div class="panel-body">
 						<span class="glyphicon glyphicon-facetime-video well" style="font-size: 60px"></span>
-						<h2>Quero ver uma demonstração</h2>
+						<h2>Você possui experiência em negócios?</h2>
 						<div class="rounded-icons xicon-copy"></div>
-						<p class="lead">Veja em mais detalhes e vídeos como o software funciona</p>
-						<p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
-						<hr class="visible-xs visible-sm"/>
+						<p class="lead">Venha dividir seu conhecimento com novos empreendedores.</p>
 					</div>
 				</div>
 			</div>
@@ -66,10 +61,9 @@
 				<div class="panel panel-default" style="overflow:hidden">
 					<div class="panel-body">
 						<span class="glyphicon glyphicon-plane well" style="font-size: 60px"></span>
-						<h2>Quero acelerar meus resultados agora</h2>
+						<h2>Você quer investir em negócios inovadores e alto impacto?</h2>
 						<div class="rounded-icons xicon-rocket"></div>
-						<p class="lead">Use o Inovatech para aumentar a produtividade dos seus projetos</p>
-						<p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
+						<p class="lead">Encontre ótimas ideias aqui.</p>
 					</div>
 				</div>
 			</div>
