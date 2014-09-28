@@ -1,40 +1,72 @@
-<%# this DIV close container of layout  %>
-</div>  
+
 <header>
 
-	<div class="container">
+	<div class="container-fluid">
 
-		<div class="row">
-			<div class="col-md-12 center">
-				<a class="logo bg-dark" style="text-decoration: none" href="/">
-					<span class="logoicon-plataforma">Plataforma</span>
-					<span class="logoicon-inovatech">Inovatech</span>
-				</a>
+		<div class="col-sm-8">
+			<div class="col-sm-12 center">
+
+			</div>
+			
+				
+
+			<div class="txtindex col-sm-12">
+				
+				<h4><b>Para pessoas inovadoras, empreendedoras e colaborativas que buscam um espaço para trocar ideias e experiências. O InovaTech é uma plataforma que permite que você registre suas Ideias, busque parceiros para transforma-las em negócios, mentores para conduzi-los pelos melhores caminhos e investidores para coloca-las em prática.</b></h4>
+
+				<section class="center">
+					<% if user_signed_in? %>
+					<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+					<% end %>
+				</section>
 			</div>
 		</div>
 
+		<div class="col-sm-4">
+			<div class=" login-index ">
+					<ul id="myTab" class="nav nav-justified">
 
-		<div class="txtindex col-md-12">
-			<section class="center">
-				<h1>Comece agora!</h1>
-				<p>A InovaTech está esperando por suas ideias</p>
-				<% if user_signed_in? %>
-				<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
-				<% else %>
-				<%= link_to t('links.login'), "#myModal", data: {toggle: "modal"}, class: "btn btn-primary btn-lg" %>
-				<%= link_to t('links.register'), new_user_registration_path, class: "btn btn-primary btn-lg" %>
-				<% end %>
-			</section>
+					    <li class="active"><a href="#entrar" data-toggle="tab"><b>Entrar</b></a></li>
+					    <li><a href="#registrar" data-toggle="tab"><b>Registrar</b></a></li>
+					</ul>
+
+					<div id="myTabContent" class="tab-content container-fluid">
+
+						<div class="tab-pane fade in active" id="entrar">
+							<%= form_for(:user, :url => session_path(:user)) do |f| %>
+
+
+								<div style="text-align: left">
+									<label for="email">Email :</label>
+									<%= f.email_field :email, autofocus: true, class: "form-control", id: "email", placeholder: "exemplo@email.com"%></br>
+								</div>
+
+								<div style="text-align: left">
+									<label for="password">Senha:</label>
+									<%= f.password_field :password, autocomplete: "off",class:"form-control", id:"password", placeholder: "" %>
+								</div>
+								</br>
+								<div style="text-align: left">
+									<%= f.submit "Entrar", class: "btn btn-success btn-lg col-xs-12 "%>
+								</div>
+							<% end %>
+						</div>
+
+						<div class="tab-pane fade" id="registrar">
+							
+						</div>
+					
+				</div>
+			</div>
+			</div>
 		</div>
-
-
 
 	</div>
 </header>
 
 <section class="center">
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row" >
 
 			<div class="col-xs-12 col-sm-12 col-md-4">

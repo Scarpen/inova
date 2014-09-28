@@ -17,10 +17,6 @@
     font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
-.navbar{
-    z-index: 99;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
 .navbar-nav > li > a {
     font-weight: bold;
 }
@@ -64,6 +60,7 @@ header {
     width: auto;
     overflow: visible;
     padding: 30px 0px;
+    border-radius: 4px;
     background-color: #17345E;
 }
 
@@ -101,4 +98,35 @@ section {
     top: 50%;
     transition: transform 0.5s;
     transform: rotateX(0deg) translateY(-100%);
+}
+
+.login-index{
+    background: rgba(255,255,255,1);
+    border-radius: 4px;
+}
+
+#myTab{
+  background: #cccccc;
+  border-radius: 4px 4px 0 0;
+}
+#myTab .active a {
+  background: #ffffff;
+  color: #123456;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0px -1px 1px #333;
+}
+#myTab .active a:hover{
+  background: #ffffff;
+  color: #333333;
+   border-radius: 4px 4px 0 0;
+}
+#myTab a{
+  color: #777777;
+}
+#myTab a:hover{
+  color: #555555;
+   border-radius: 4px 4px 0 0;
+}
+#myTabContent{
+    padding: 10px;
 }
