@@ -34,7 +34,6 @@ end
 
 # Gems Externas
 gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 'master'
-gem 'bootstrap-sass'
 gem 'devise'
 gem 'better_errors'
 gem 'kaminari-bootstrap'

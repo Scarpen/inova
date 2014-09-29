@@ -13,6 +13,9 @@
  *= require bootstrap-datepicker3
  *= require font-awesome
  */
+ #carousel-example-generic{
+    margin-bottom: 0px;
+ }
 *{
     font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
@@ -62,11 +65,16 @@ header {
     padding: 30px 0px;
     border-radius: 4px;
     background-color: #17345E;
+    background-image: -webkit-linear-gradient(top, #5F789D 0%, #17345E 100%);
+    background-image: -o-linear-gradient(top, #5F789D 0%, #17345E 100%);
+    background-image: linear-gradient(to bottom, #5F789D 0%, #17345E 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 0 15px rgba(123,123,123,1);
 }
 
 section.blue.light {
-    background-color: #CBCAFF;
-    margin-bottom: 40px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 section.blue {
     background-color: #FFF;
@@ -80,24 +88,6 @@ section {
 
 .txtindex{
     color:#fff;
-}
-
-
-.ha-header-rotate {
-    height: 220px;
-    top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
- 
-.ha-header-rotate .ha-header-front {
-    transform: translateY(-100%) rotateX(90deg);
-}
- 
-.ha-header-rotate .ha-header-bottom {
-    top: 50%;
-    transition: transform 0.5s;
-    transform: rotateX(0deg) translateY(-100%);
 }
 
 .login-index{
@@ -129,4 +119,13 @@ section {
 }
 #myTabContent{
     padding: 10px;
+}
+
+#listindex{
+      height: 320px;
+}
+@media (max-width:991px){
+  #listindex{
+     height: 100%;
+    }
 }

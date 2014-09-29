@@ -1,33 +1,35 @@
-<div id="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				</br>
+<div class="container">
+	<div id="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					</br>
+				</div>
+				<div class="col-md-4">
+					<h1 style="color: #CBCAFF">Projetos</h1>
+					<ul>
+						<li><%= link_to 'Inovatech', root_path, class: "footer-link" %></li>
+						<li><%= link_to 'Savih', root_path, class: "footer-link" %></li>
+						<li><%= link_to 'FS-Frotas', root_path, class: "footer-link" %></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h1 style="color: #CBCAFF">Sobre</h1>
+					<ul>
+						<li><%= link_to 'A Empresa', root_path, class: "footer-link" %></li>
+						<li><%= link_to 'Contato', root_path, class: "footer-link" %></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h1 style="color: #CBCAFF">Serviços</h1>
+					<ul>
+						<li><%= link_to 'Consultoria', root_path, class: "footer-link" %></li>
+						<li><%= link_to 'Parceria', root_path, class: "footer-link" %></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-md-4">
-				<h1 style="color: #CBCAFF">Projetos</h1>
-				<ul>
-					<li><%= link_to 'Inovatech', root_path, class: "footer-link" %></li>
-					<li><%= link_to 'Savih', root_path, class: "footer-link" %></li>
-					<li><%= link_to 'FS-Frotas', root_path, class: "footer-link" %></li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<h1 style="color: #CBCAFF">Sobre</h1>
-				<ul>
-					<li><%= link_to 'A Empresa', root_path, class: "footer-link" %></li>
-					<li><%= link_to 'Contato', root_path, class: "footer-link" %></li>
-				</ul>
-			</div>
-			<div class="col-md-4">
-				<h1 style="color: #CBCAFF">Serviços</h1>
-				<ul>
-					<li><%= link_to 'Consultoria', root_path, class: "footer-link" %></li>
-					<li><%= link_to 'Parceria', root_path, class: "footer-link" %></li>
-				</ul>
-			</div>
+			<br>
+			<p class="center" style="color: #FFFFFF">Copyright © <%= Time.now.year %> FabSoft - Cesupa.</p>
 		</div>
-		<br>
-		<p style="color: #FFFFFF">Copyright © <%= Time.now.year %> FabSoft - Cesupa.</p>
 	</div>
 </div>

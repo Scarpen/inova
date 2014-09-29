@@ -1,40 +1,58 @@
 
 <header>
-
 	<div class="container-fluid">
+		<% if user_signed_in? %>
+		  <div class="col-md-12">
+		<% else %>
+		  <div class="col-md-8">
+		<% end %>
+			<div class="txtindex col-xs-12">
+			<h1>Participe agora mesmo do Inovatech:</h1>
+			</br>
+				<div class="col-xs-12">
+					<div class="col-xs-2">
+						<h1 class="fa fa-lightbulb-o fa-4x" style="color: #FFFEA7; text-shadow: 0 0 10px #F3F610; font-size: 100px"></h1>
+					</div>
+					<div class="col-xs-10">
+						<div id="carousel-example-generic" class="carousel slide container-fluid" data-ride="carousel">				
+							<div class="carousel-inner">
+								<div class="item active">
+											<h2>Para pessoas inovadoras, empreendedoras e colaborativas que buscam um espaço para trocar ideias e experiências.</h2>
+								</div>
 
-		<div class="col-sm-8">
-			<div class="col-sm-12 center">
+								<div class="item">
+											<h2 > Registre suas Ideias, busque parceiros para transforma-las em negócios.</h2>
+								</div>
 
-			</div>
-			
-				
-
-			<div class="txtindex col-sm-12">
-				
-				<h4><b>Para pessoas inovadoras, empreendedoras e colaborativas que buscam um espaço para trocar ideias e experiências. O InovaTech é uma plataforma que permite que você registre suas Ideias, busque parceiros para transforma-las em negócios, mentores para conduzi-los pelos melhores caminhos e investidores para coloca-las em prática.</b></h4>
-
+								<div class="item">
+											<h2>Receba auxilio de mentores para conduzi-los pelos melhores caminhos e investidores para coloca-las em prática.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+				</br>
 				<section class="center">
 					<% if user_signed_in? %>
-					<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
+						<%= link_to 'Cadastrar Projetos', new_project_path, class:"btn btn-primary btn-lg" %>
 					<% end %>
 				</section>
+
 			</div>
 		</div>
 
-		<div class="col-sm-4">
-			<div class=" login-index ">
+		<% unless user_signed_in? %>	
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class=" login-index ">
 					<ul id="myTab" class="nav nav-justified">
-
-					    <li class="active"><a href="#entrar" data-toggle="tab"><b>Entrar</b></a></li>
-					    <li><a href="#registrar" data-toggle="tab"><b>Registrar</b></a></li>
+						<li class="active"><a href="#entrar" data-toggle="tab"><b>Entrar</b></a></li>
+						<li><a href="#registrar" data-toggle="tab"><b>Registrar</b></a></li>
 					</ul>
 
 					<div id="myTabContent" class="tab-content container-fluid">
 
 						<div class="tab-pane fade in active" id="entrar">
 							<%= form_for(:user, :url => session_path(:user)) do |f| %>
-
 
 								<div style="text-align: left">
 									<label for="email">Email :</label>
@@ -46,62 +64,81 @@
 									<%= f.password_field :password, autocomplete: "off",class:"form-control", id:"password", placeholder: "" %>
 								</div>
 								</br>
+
 								<div style="text-align: left">
 									<%= f.submit "Entrar", class: "btn btn-success btn-lg col-xs-12 "%>
 								</div>
+
+								<p class="center"> ou conecte-se usando as redes sociais:</p>
+								<div class="btn-group btn-group-justified">
+									<%= link_to " ", user_omniauth_authorize_path(:twitter), class: " btn btn-lg btn-info fa fa-twitter", id: "btn-twitter"  %>
+									<%= link_to " ", user_omniauth_authorize_path(:facebook), class: "btn btn-lg btn-primary fa fa-facebook", id: "btn-facebook" %>
+									<%= link_to " ", user_omniauth_authorize_path(:linkedin), class: "btn btn-lg btn-info fa fa-linkedin", id: "btn-linkedin" %>
+								</div>
 							<% end %>
 						</div>
+					
 
 						<div class="tab-pane fade" id="registrar">
-							
+							<%= simple_form_for(:user, url: registration_path(:user), html: {class: "form-vertical"}) do |f| %>
+								<div style="text-align: left">
+									<%= f.input :full_name %>
+								</div>
+								<div style="text-align: left">
+									<%= f.input :email%>
+								</div>
+								<div style="text-align: left">
+									<%= f.input :password, autocomplete: "off" %>
+								</div>
+								<div style="text-align: left">
+									<%= f.input :password_confirmation, autocomplete: "off" %>
+								</div>
+								</br>
+								<div style="text-align: left">
+									<%= f.submit "Cadastrar", class: "btn btn-success btn-lg col-xs-12 "%>
+								</div>
+							<% end %>
 						</div>
-					
+					</div>
 				</div>
 			</div>
-			</div>
-		</div>
-
+		<% end %>
 	</div>
-</header>
+</header>	
 
 <section class="center">
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row" >
 
 			<div class="col-xs-12 col-sm-12 col-md-4">
-				<div class="panel panel-default" style="overflow:hidden">
+				<div class="panel panel-default" style="overflow:hidden" id="listindex">
 					<div class="panel-body">
-						<span class="glyphicon glyphicon-briefcase well" style="font-size: 60px"></span>
+						<span class="fa fa-rocket fa-4x" style="font-size: 60px"></span>
 						<h2>Acompanhe o desenvolvimento dos seus projetos</h2>
-						<p class="lead">Cadastre projetos, sua equipe e gerencie-os</p>
-						<p><%= link_to "Aprenda", root_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
-						<hr class="visible-xs visible-sm"/>
+						<p class="lead">Você acredita na sua ideia e está precisando de uma ajuda para colocá-la em prática?</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-4">
-				<div class="panel panel-default" style="overflow:hidden">
+				<div class="panel panel-default" style="overflow:hidden"  id="listindex">
 					<div class="panel-body">
-						<span class="glyphicon glyphicon-facetime-video well" style="font-size: 60px"></span>
-						<h2>Quero ver uma demonstração</h2>
+						<span class="fa fa-users fa-4x" style="font-size: 60px"></span>
+						<h2>Você possui experiência em negócios?</h2>
 						<div class="rounded-icons xicon-copy"></div>
-						<p class="lead">Veja em mais detalhes e vídeos como o software funciona</p>
-						<p><%= link_to "Peça uma demonstração", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
-						<hr class="visible-xs visible-sm"/>
+						<p class="lead">Venha dividir seu conhecimento com novos empreendedores.</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-sm-12 col-md-4">
-				<div class="panel panel-default" style="overflow:hidden">
+				<div class="panel panel-default" style="overflow:hidden"  id="listindex">
 					<div class="panel-body">
-						<span class="glyphicon glyphicon-plane well" style="font-size: 60px"></span>
-						<h2>Quero acelerar meus resultados agora</h2>
+						<span class="fa fa-money fa-4x" style="font-size: 60px"></span>
+						<h2>Você quer investir em negócios inovadores e alto impacto?</h2>
 						<div class="rounded-icons xicon-rocket"></div>
-						<p class="lead">Use o Inovatech para aumentar a produtividade dos seus projetos</p>
-						<p><%= link_to "Conheça mais do Inovatech", welcome_about_path, class: "btn btn-primary btn-lg", id: "btn" %></p>
+						<p class="lead">Encontre ótimas ideias aqui.</p>
 					</div>
 				</div>
 			</div>
@@ -111,56 +148,53 @@
 </section>
 
 
-<section class="social-proof blue light center">
-	<div class="container">
-		<div class="col-md-12 ">
-			<div class="col-md-8">
-				<h2>Fique por dentro das <strong>últimas notícias !</strong>
-				</h2>
+
+
+<section class="social-proof blue light center container-fluid">
+	<div class="container-fluid">
+		<div class="col-sm-12">
+			<div class="col-md-12 ">
+				<div class="col-md-7">
+					<h2>Fique por dentro das <strong>últimas notícias !</strong></h2>
+				</div>
+				<div class="row">
+					<br/>
+					<div class="col-md-5">
+						<div class="btn-group btn-group-justified">
+							<a id="btn-gplus"class="btn btn-danger " href="#">
+								<span class = "fa fa-google-plus"></span>
+							</a>
+
+							<a id="btn-twitter"class="btn btn-info " href="#">
+								<span class = "fa fa-twitter"></span>
+							</a>
+
+							<a id="btn-facebook"class="btn btn-primary " href="http://facebook.com/fabsoft">
+								<span class = "fa fa-facebook"></span>
+							</a>
+
+							<a id="btn-ln"class="btn btn-primary " href="#">
+								<span class = "fa fa-linkedin"></span> 
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="row">
-
-				<br/>
-				<div class="col-md-1">
-					<a id="btn-gplus"class="btn btn-danger " href="#">
-						<span class = "fa fa-google-plus"></span>
-					</a>
-				</div>
-
-				<div class="col-md-1">
-					<a id="btn-twitter"class="btn btn-info " href="#">
-						<span class = "fa fa-twitter"></span>
-					</a>
-				</div>
-
-				<div class="col-md-1">
-					<a id="btn-facebook"class="btn btn-primary " href="http://facebook.com/fabsoft">
-						<span class = "fa fa-facebook"></span>
-					</a>
-				</div>
-
-				<div class="col-md-1">
-					<a id="btn-ln"class="btn btn-primary " href="#">
-						<span class = "fa fa-linkedin"></span> 
-					</a>
-				</div>
-
-			</div>
-		</div>
-
-		<div class="col-md-4">
+		</br>
+		
+		<div class="col-sm-6 col-md-5 col-md-offset-1">
 			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffabsoft&amp&amp;width=The+pixel+width+of+the+plugin&amp;height=426&amp;colorscheme=light&amp;
 			show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;width=426" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%;
 			height:426px;background-color:#ffffff" allowTransparency="false" ></iframe>
 			<hr class="visible-xs visible-sm"/>        
 		</div>
 
-		<div class="col-md-8">
+		<div class="col-sm-6 col-md-5">
 			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fabsoftcesupa/favorites"  data-widget-id="491093024684793857">Tweets que @fabsoftcesupa curtiu</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
 				"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				<hr class="visible-xs visible-sm"/>
-			</div>
 		</div>
+		</div>		
 	</div>
 </section>

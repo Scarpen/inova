@@ -12,8 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
-//= require bootstrap
+//= require_tree .  
 //= require jquery.maskedinput.min.js
 //= require bootstrap-datepicker
 //= require cocoon

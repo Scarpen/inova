@@ -1,0 +1,44 @@
+// Configurações do Footer
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  overflow:hidden;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: !important;
+}
+#footer {
+  margin-top: 80px;
+  background-color:  #17345E;
+  box-shadow: 0 0 15px rgba(123,123,123,1);
+  border-radius: 4px 4px 0 0 ;
+    background-image: -webkit-linear-gradient(top, #5F789D 0%, #17345E 100%);
+    background-image: -o-linear-gradient(top, #5F789D 0%, #17345E 100%);
+    background-image: linear-gradient(to bottom, #5F789D 0%, #17345E 100%);
+    background-repeat: repeat-x;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+// Fim das Configurações do Footer
