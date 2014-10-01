@@ -24,11 +24,11 @@ body {
 #footer {
   margin-top: 80px;
   background-color:  #17345E;
-  box-shadow: 0 0 15px rgba(123,123,123,1);
-  border-radius: 4px 4px 0 0 ;
-    background-image: -webkit-linear-gradient(top, #5F789D 0%, #17345E 100%);
-    background-image: -o-linear-gradient(top, #5F789D 0%, #17345E 100%);
-    background-image: linear-gradient(to bottom, #5F789D 0%, #17345E 100%);
+  // box-shadow: 0 0 15px rgba(123,123,123,1);
+  border-radius: 0 0 4px 4px;
+    background-image: -webkit-linear-gradient(top, #5F789D 0%, #5F789D 100%);
+    background-image: -o-linear-gradient(top, #5F789D 0%, #5F789D 100%);
+    background-image: linear-gradient(to bottom, #5F789D 0%, #5F789D 100%);
     background-repeat: repeat-x;
 }
 

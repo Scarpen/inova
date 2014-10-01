@@ -1,5 +1,5 @@
-
-<header>
+</div>
+<header><div class="container">
 	<div class="container-fluid">
 		<% if user_signed_in? %>
 		  <div class="col-md-12">
@@ -103,12 +103,12 @@
 				</div>
 			</div>
 		<% end %>
-	</div>
+	</div></div>
 </header>	
-
 <section class="center">
 
 	<div class="container-fluid">
+	<div class="container">
 		<div class="row" >
 
 			<div class="col-xs-12 col-sm-12 col-md-4">
@@ -145,56 +145,41 @@
 
 		</div><%# end row %>
 	</div><%# end container %>
+	</div>
 </section>
 
 
 
 
-<section class="social-proof blue light center container-fluid">
-	<div class="container-fluid">
+	<div class="container">
+	<div class="panel panel-default" style="overflow:hidden" >
 		<div class="col-sm-12">
-			<div class="col-md-12 ">
-				<div class="col-md-7">
-					<h2>Fique por dentro das <strong>últimas notícias !</strong></h2>
-				</div>
-				<div class="row">
-					<br/>
-					<div class="col-md-5">
-						<div class="btn-group btn-group-justified">
-							<a id="btn-gplus"class="btn btn-danger " href="#">
-								<span class = "fa fa-google-plus"></span>
-							</a>
+			<div class="col-md-7">
+				<h2 class="center">Fique por dentro das <strong>últimas notícias !</strong></h2>
+			</div>
+			<div class="row">
+				<br/>
+				<div class="col-md-5">
+					<div class="btn-group btn-group-justified">
+						<a id="btn-gplus"class="btn btn-danger " href="#">
+							<span class = "fa fa-google-plus"></span>
+						</a>
 
-							<a id="btn-twitter"class="btn btn-info " href="#">
-								<span class = "fa fa-twitter"></span>
-							</a>
+						<a id="btn-twitter"class="btn btn-info " href="#">
+							<span class = "fa fa-twitter"></span>
+						</a>
 
-							<a id="btn-facebook"class="btn btn-primary " href="http://facebook.com/fabsoft">
-								<span class = "fa fa-facebook"></span>
-							</a>
+						<a id="btn-facebook"class="btn btn-primary " href="http://facebook.com/fabsoft">
+							<span class = "fa fa-facebook"></span>
+						</a>
 
-							<a id="btn-ln"class="btn btn-primary " href="#">
-								<span class = "fa fa-linkedin"></span> 
-							</a>
-						</div>
+						<a id="btn-ln"class="btn btn-primary " href="#">
+							<span class = "fa fa-linkedin"></span> 
+						</a>
 					</div>
 				</div>
 			</div>
-		</br>
-		
-		<div class="col-sm-6 col-md-5 col-md-offset-1">
-			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffabsoft&amp&amp;width=The+pixel+width+of+the+plugin&amp;height=426&amp;colorscheme=light&amp;
-			show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;width=426" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%;
-			height:426px;background-color:#ffffff" allowTransparency="false" ></iframe>
-			<hr class="visible-xs visible-sm"/>        
-		</div>
-
-		<div class="col-sm-6 col-md-5">
-			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/fabsoftcesupa/favorites"  data-widget-id="491093024684793857">Tweets que @fabsoftcesupa curtiu</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+
-				"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-				<hr class="visible-xs visible-sm"/>
-		</div>
-		</div>		
+			</br>
+		</div>	
+	</div>	
 	</div>
-</section>
