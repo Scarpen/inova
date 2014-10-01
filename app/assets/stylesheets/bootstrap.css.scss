@@ -3767,7 +3767,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  height: 46px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4087,7 +4087,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0);
 }
 .navbar-default .navbar-brand {
   color: #777777;

@@ -30,6 +30,7 @@ body {
     background-image: -o-linear-gradient(top, #5F789D 0%, #5F789D 100%);
     background-image: linear-gradient(to bottom, #5F789D 0%, #5F789D 100%);
     background-repeat: repeat-x;
+     box-shadow: inset 0px  15px 10px -10px  rgba(0,0,0,0.5) ;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */

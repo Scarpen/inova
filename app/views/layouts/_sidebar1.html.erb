@@ -1,0 +1,22 @@
+
+<div class="m-container">
+  <div class="menu-wrap">
+      <nav class="menu">
+          <div class="profile"><%= image_tag avatar_url(current_user,40) %><span><%= current_user.full_name%></span></div>
+          <div class="link-list">
+            <a href="#"><span>Latest stories</span></a>
+            <a href="#"><span>Your friends</span></a>
+            <a href="#"><span>Personal Settings</span></a>
+            <a href="#"><span>Security &amp; Privacy</span></a>
+          </div>
+          <div class="icon-list">
+            <a href="#"><i class="fa fa-fw fa-home"></i></a>
+            <a href="#"><i class="fa fa-fw fa-question-circle"></i></a>
+            <a href="#"><i class="fa fa-fw fa-power-off"></i></a>
+          </div>
+      </nav>
+</div>
+      <button class="menu-button" id="open-button"><i class="fa fa-fw fa-user"></i><span>Open Menu</span></button>
+  </div>  
+<script src="/assets/classie.js"></script>
+<script src="/assets/main.js"></script>
