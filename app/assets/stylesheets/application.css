@@ -124,6 +124,7 @@ section {
 
 #listindex{
       height: 320px;
+      color: #666;
 }
 @media (max-width:991px){
   #listindex{
