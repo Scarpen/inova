@@ -20,8 +20,9 @@
 				<% if user_signed_in? %>
 	      	<%= render 'layouts/sidebar'%>
 		    <%end%>
+		    
 	      <%= render 'layouts/navbar' %>
-				<%= render 'layouts/messages' %>
+				
 				<div class="container">
 					<%= yield %>
 				</div><!-- /st-container -->	

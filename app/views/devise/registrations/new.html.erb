@@ -1,7 +1,10 @@
-<div class="page-header">
+</div>
+<div class="titulo">
+      <div class="container">
   <h1><%= t(".title") %></h1>
 </div>
-
+</div>
+<div class="container">
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-vertical"}) do |f| %>
 <%= f.error_notification %>
 
@@ -122,7 +125,7 @@ include_blank: false %>
   <%= render "devise/shared/links" %>
 </div>
 <% end %>
-
+</div>
 <script type="text/javascript">
   $('[data-behaviour~=datepicker]').datepicker({
     "format": "dd-mm-yyyy",

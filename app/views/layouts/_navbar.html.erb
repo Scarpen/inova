@@ -6,6 +6,16 @@
       <p class="navbar-text">Transformar ideias inovadoras em negócios de alto impacto!</p>
     </div>
     
+    
   </div><!-- /.container-fluid -->
-
 </nav>
+<%= render 'layouts/messages' %>
+<% if user_signed_in? %>
+<div class="container">
+	<ul class="nav nav-tabs nav-justified">
+		<li class=""><%= link_to t(' Projetos'), projects_path, class: "fa fa-suitcase"%></li>
+		<li class="<%= 'active' if params[:controller] == 'projects' and (params[:action] == 'index' or params[:action] == 'show')%>"><%= link_to t(' Meus Projetos'), projects_path, class:"fa fa-star"%></li>
+		<li class="<%= 'active' if params[:controller] == 'projects' and params[:action] == 'new' %>"><%= link_to t(' Novo Projeto'), new_project_path, class:"fa fa-plus"%></li>
+	</ul>
+</div>
+<% end %>

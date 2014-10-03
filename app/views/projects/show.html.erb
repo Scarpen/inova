@@ -1,11 +1,11 @@
-<div class="page-header">
-	<h1><%= t '.show' %> <%= t '.project' %></h1>
+</div>
+<div class="titulo">
+      <div class="container">
+	<h1><%= t '.show' %> <%= t '.project' %> <small>/ <%= @project.title %></small></h1>
+      </div>
 </div>
 
-<div class="panel panel-primary" style="word-break: break-all">
-  <div class="panel-heading">
-    <h3 class="panel-title"><%= t '.project' %></h3>
-  </div>
+<div class="container" style="word-break: break-all">
   <div class="panel-body">
   
   <p>
@@ -38,7 +38,7 @@
 
 
   </div>
-</div>
+
 
 <% if @project.events.count.nonzero? %>
 <div class="panel panel-primary">
@@ -69,3 +69,4 @@
 
 <%= link_to t('links.edit'), edit_project_path(@project), class: "btn btn-primary" %>
 <%= link_to t('links.back'), projects_path, class: "btn btn-default" %>
+</div>
